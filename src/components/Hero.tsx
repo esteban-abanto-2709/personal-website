@@ -1,5 +1,7 @@
 "use client";
 
+import Image from "next/image";
+
 import { useScrollToSection } from "@/hooks";
 
 export default function Hero() {
@@ -55,10 +57,14 @@ export default function Hero() {
             <div className="flex justify-center lg:justify-end">
               <div className="relative w-80 h-80">
                 <div className="w-full h-full rounded-full bg-linear-to-br from-emerald-500/20 to-cyan-500/20 border border-white/10 flex items-center justify-center backdrop-blur-sm shadow-inner overflow-hidden">
-                  <img
+                  <Image
                     src="/avatar.webp"
                     alt="Esteban Abanto"
-                    className="w-64 h-64 object-cover rounded-full border border-white/20"
+                    width={256}
+                    height={256}
+                    priority
+                    draggable={false}
+                    className="w-64 h-64 object-cover rounded-full border border-white/20 select-none pointer-events-none"
                   />
                 </div>
               </div>
