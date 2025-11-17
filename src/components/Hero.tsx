@@ -1,6 +1,10 @@
-import Image from "next/image";
+"use client";
+
+import { useScrollToSection } from "@/hooks";
 
 export default function Hero() {
+  const scrollToSection = useScrollToSection();
+
   return (
     <section
       id="hero"
@@ -33,15 +37,10 @@ export default function Hero() {
                 <button
                   className="bg-linear-to-br from-emerald-500 to-cyan-500 hover:opacity-90 text-white px-6 py-3 rounded-xl text-sm font-semibold flex items-center gap-2 shadow-lg transition"
                   type="button"
+                  onClick={() => scrollToSection("projects")}
                 >
-                  Ver Proyectos
+                  Ir a Proyectos
                 </button>
-                <a
-                  href="#projects"
-                  className="bg-linear-to-br from-emerald-500 to-cyan-500 hover:opacity-90 text-white px-6 py-3 rounded-xl text-sm font-semibold flex items-center gap-2 shadow-lg transition"
-                >
-                  Ver Proyectos
-                </a>
 
                 <a
                   href="/CV_Esteban_Abanto_EN.pdf"
