@@ -1,26 +1,48 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+/* Header */
+.nav-link {
+  @apply text-gray-300 hover:text-white transition-colors duration-300 relative;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+.nav-link.active {
+  @apply text-white;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+.nav-link.active::after {
+  content: "";
+  @apply absolute -bottom-1 left-0 w-full h-0.5 bg-linear-to-r from-emerald-400 to-cyan-400 rounded-full;
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+/* Project Item */
+.badge-tech {
+  @apply px-3 py-1 bg-emerald-500/20 text-emerald-300 rounded-full text-sm border border-emerald-500/30;
+}
+
+/* Project Item & Experience Item*/
+.glass-card {
+  @apply bg-white/5 backdrop-blur-md shadow-lg transition-all duration-300 hover:scale-[1.02];
+}
+
+/* Stack Item */
+.stack-item {
+  @apply px-5 py-3 bg-white/5 backdrop-blur-sm text-emerald-200 border border-white/10 rounded-xl font-medium text-sm hover:bg-white/10 transition;
+}
+
+/* Botón de copiar email */
+.copy-button {
+  @apply p-2 bg-emerald-500/20 hover:bg-emerald-500/30 text-emerald-300 
+    rounded-lg border border-emerald-500/30 transition-all duration-200;
+}
+
+/* Notificación de copiado */
+.copy-notification {
+  @apply mb-4 p-2 bg-emerald-500/20 text-emerald-300 
+    rounded-lg border border-emerald-500/30 text-sm;
+}
+
+/* Botones de contacto */
+.contact-btn {
+  @apply flex items-center justify-center gap-3 p-4 rounded-xl border 
+    transition-all duration-200 font-medium text-sm sm:text-base;
 }

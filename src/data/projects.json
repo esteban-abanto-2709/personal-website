@@ -1,0 +1,71 @@
+[
+  {
+    "title": "Ephemeral Chat",
+    "description": "App de mensajería efímera y anónima en tiempo real, sin almacenamiento de datos. Usando React, Socket.IO y Express.",
+    "techStack": [
+      "React",
+      "TypeScript",
+      "Socket.IO",
+      "Express"
+    ],
+    "link": "https://ephemeral-chat-xuou.onrender.com",
+    "year": "2025"
+  },
+  {
+    "title": "SOUL SWITCHEROO",
+    "description": "Videojuego desarrollado en una Game Jam como programador principal bajo el seudónimo 'Baphomet'. Mecánicas de intercambio de almas.",
+    "techStack": [
+      "Unity",
+      "C#",
+      "Game Jam",
+      "Mechanics"
+    ],
+    "link": "https://fecoramirez.itch.io/soul-switchero",
+    "year": "2021"
+  },
+  {
+    "title": "LANZÓN MONOLÍTICO",
+    "description": "Videojuego desarrollado en una Game Jam bajo el seudónimo 'Baphomet'. Desempeñé el rol de programador principal en este proyecto de temática cultural.",
+    "techStack": [
+      "Unity",
+      "C#",
+      "Game Jam",
+      "Cultural"
+    ],
+    "link": "https://fecoramirez.itch.io/lanzon-monolitico",
+    "year": "2021"
+  },
+  {
+    "title": "ROCKIN",
+    "description": "Videojuego desarrollado durante una Game Jam bajo el seudónimo 'Baphomet'. Participé como programador principal en este proyecto de desarrollo rápido.",
+    "techStack": [
+      "Unity",
+      "C#",
+      "Game Jam"
+    ],
+    "link": "https://estebanabanto2709.itch.io/rockin",
+    "year": "2021"
+  },
+  {
+    "title": "SPACE INFINITY",
+    "description": "Videojuego de temática espacial donde participé como programador adjunto bajo el seudónimo 'Isaac Ortega'.",
+    "techStack": [
+      "Unity",
+      "C#",
+      "Game Programming"
+    ],
+    "link": "https://pindot-studio.itch.io/space-infinity",
+    "year": "2022"
+  },
+  {
+    "title": "DELTA SPACE",
+    "description": "Videojuego espacial donde participé como programador y diseñador bajo el seudónimo 'Isaac Ortega'. Posteriormente mejorado y publicado en la plataforma de Huawei.",
+    "techStack": [
+      "Unity",
+      "C#",
+      "Game Design"
+    ],
+    "link": "https://tls.itch.io/delta-space-d",
+    "year": "2022"
+  }
+]
