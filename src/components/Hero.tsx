@@ -1,10 +1,11 @@
 "use client";
 
 import Image from "next/image";
-
-import { useScrollToSection } from "@/hooks";
+import { useScrollToSection, useTranslations } from "@/hooks";
 
 export default function Hero() {
+  const t = useTranslations('hero');
+
   const scrollToSection = useScrollToSection();
 
   return (
@@ -17,21 +18,21 @@ export default function Hero() {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-8">
               <div className="space-y-3">
-                <p className="text-gray-400 text-base sm:text-lg">Hola,</p>
+                <p className="text-gray-400 text-base sm:text-lg">
+                  {t('greeting')}
+                </p>
                 <h1 className="text-5xl sm:text-6xl font-extrabold text-white leading-tight whitespace-nowrap">
-                  Soy{" "}
+                  {t('iam')}
+                  {" "}
                   <span className="text-transparent bg-clip-text bg-linear-to-r from-emerald-400 to-cyan-400">
                     Esteban Abanto
                   </span>
                 </h1>
                 <h2 className="text-xl sm:text-2xl text-emerald-400 font-medium">
-                  Desarrollador de Software
+                  {t('title')}
                 </h2>
                 <p className="text-gray-300 max-w-xl leading-relaxed">
-                  Tengo experiencia construyendo aplicaciones web modernas,
-                  videojuegos interactivos y soluciones full stack. Me
-                  especializo en crear productos digitales con enfoque en
-                  rendimiento, diseño y experiencia de usuario.
+                  {t('description')}
                 </p>
               </div>
 
@@ -41,7 +42,7 @@ export default function Hero() {
                   type="button"
                   onClick={() => scrollToSection("projects")}
                 >
-                  Ir a Proyectos
+                  {t('viewProjects')}
                 </button>
 
                 <a
@@ -49,7 +50,7 @@ export default function Hero() {
                   download
                   className="bg-white/10 hover:bg-white/20 border border-white/20 text-white px-6 py-3 rounded-xl text-sm font-medium flex items-center gap-2 transition"
                 >
-                  Descargar CV
+                  {t('downloadCV')}
                 </a>
               </div>
             </div>

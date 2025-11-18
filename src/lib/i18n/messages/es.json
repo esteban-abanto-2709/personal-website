@@ -1,0 +1,158 @@
+{
+  "navigation": {
+    "title": "Desarrollador de Software",
+    "experience": "Experiencia",
+    "projects": "Proyectos",
+    "contact": "Contacto"
+  },
+  "hero": {
+    "greeting": "Hola,",
+    "iam": "Soy",
+    "name": "Esteban Abanto",
+    "title": "Desarrollador de Software",
+    "description": "Tengo experiencia construyendo aplicaciones web modernas, videojuegos interactivos y soluciones full stack. Me especializo en crear productos digitales con enfoque en rendimiento, diseño y experiencia de usuario.",
+    "viewProjects": "Ir a Proyectos",
+    "downloadCV": "Descargar CV"
+  },
+  "experience": {
+    "title": "Experiencia Profesional",
+    "jobs": [
+      {
+        "title": "Operador de Software & Desarrollador Interno",
+        "company": "TV Perú (Canal 7)",
+        "years": "Marzo 2021 - Presente",
+        "description": "Desarrollo de herramientas internas en C# para apoyar transmisiones en vivo. Encargado de operar software durante programas televisivos, garantizando la estabilidad técnica en entornos de alta presión.",
+        "stack": [
+          "C#",
+          ".NET",
+          "Broadcast Tools"
+        ]
+      },
+      {
+        "title": "Desarrollador de Juegos de Realidad Virtual",
+        "company": "Tecnologías del Conocimiento SAC",
+        "years": "Abril 2023 - Noviembre 2023",
+        "description": "Diseño y programación de experiencias inmersivas en entornos de realidad virtual. Integración de interacciones avanzadas con dispositivos VR y coordinación con equipos multidisciplinarios para el desarrollo de productos educativos y de simulación.",
+        "stack": [
+          "Unity",
+          "C#",
+          "VR Development"
+        ]
+      },
+      {
+        "title": "Programador de Videojuegos",
+        "company": "Rebel Rabbit - RBLRBT SAC",
+        "years": "Febrero 2022 - Marzo 2023",
+        "description": "Implementación de mecánicas de juego, refactorización de sistemas heredados y desarrollo de herramientas personalizadas para mejorar la productividad del equipo. Participación activa en la definición técnica de features.",
+        "stack": [
+          "Unity",
+          "C#",
+          "Custom Tools"
+        ]
+      },
+      {
+        "title": "Desarrollador de Juegos 2D",
+        "company": "Net Dreams - REGOB EIRL",
+        "years": "Enero 2021 - Enero 2022",
+        "description": "Creación de videojuegos casuales utilizando GameMaker y JavaScript. Trabajo conjunto con diseñadores y artistas para cumplir deadlines exigentes y asegurar la calidad técnica de los proyectos.",
+        "stack": [
+          "GameMaker",
+          "JavaScript",
+          "C#"
+        ]
+      }
+    ]
+  },
+  "projects": {
+    "title": "Proyectos Destacados",
+    "viewProject": "Ver proyecto",
+    "items": [
+      {
+        "title": "Ephemeral Chat",
+        "description": "App de mensajería efímera y anónima en tiempo real, sin almacenamiento de datos. Usando React, Socket.IO y Express.",
+        "techStack": [
+          "React",
+          "TypeScript",
+          "Socket.IO",
+          "Express"
+        ],
+        "link": "https://ephemeral-chat-xuou.onrender.com",
+        "year": "2025"
+      },
+      {
+        "title": "SOUL SWITCHEROO",
+        "description": "Videojuego desarrollado en una Game Jam como programador principal bajo el seudónimo 'Baphomet'. Mecánicas de intercambio de almas.",
+        "techStack": [
+          "Unity",
+          "C#",
+          "Game Jam",
+          "Mechanics"
+        ],
+        "link": "https://fecoramirez.itch.io/soul-switchero",
+        "year": "2021"
+      },
+      {
+        "title": "LANZÓN MONOLÍTICO",
+        "description": "Videojuego desarrollado en una Game Jam bajo el seudónimo 'Baphomet'. Desempeñé el rol de programador principal en este proyecto de temática cultural.",
+        "techStack": [
+          "Unity",
+          "C#",
+          "Game Jam",
+          "Cultural"
+        ],
+        "link": "https://fecoramirez.itch.io/lanzon-monolitico",
+        "year": "2021"
+      },
+      {
+        "title": "ROCKIN",
+        "description": "Videojuego desarrollado durante una Game Jam bajo el seudónimo 'Baphomet'. Participé como programador principal en este proyecto de desarrollo rápido.",
+        "techStack": [
+          "Unity",
+          "C#",
+          "Game Jam"
+        ],
+        "link": "https://estebanabanto2709.itch.io/rockin",
+        "year": "2021"
+      },
+      {
+        "title": "SPACE INFINITY",
+        "description": "Videojuego de temática espacial donde participé como programador adjunto bajo el seudónimo 'Isaac Ortega'.",
+        "techStack": [
+          "Unity",
+          "C#",
+          "Game Programming"
+        ],
+        "link": "https://pindot-studio.itch.io/space-infinity",
+        "year": "2022"
+      },
+      {
+        "title": "DELTA SPACE",
+        "description": "Videojuego espacial donde participé como programador y diseñador bajo el seudónimo 'Isaac Ortega'. Posteriormente mejorado y publicado en la plataforma de Huawei.",
+        "techStack": [
+          "Unity",
+          "C#",
+          "Game Design"
+        ],
+        "link": "https://tls.itch.io/delta-space-d",
+        "year": "2022"
+      }
+    ]
+  },
+  "stack": {
+    "title": "Tecnologías que domino"
+  },
+  "contact": {
+    "title": "Contáctame",
+    "description": "¿Tienes un proyecto o colaboración en mente?",
+    "description2": "Si crees que tu idea encaja con mi perfil, coordinemos y",
+    "description3": "veamos si podemos trabajar juntos.",
+    "copyEmail": "Copiar email",
+    "emailCopied": "✓ Email copiado al clipboard",
+    "sendProposal": "Enviar propuesta",
+    "letsTalk": "Hablemos",
+    "connect": "Conectemonos"
+  },
+  "footer": {
+    "madeWith": "Hecho con ❤️ y dedicación."
+  }
+}

@@ -1,9 +1,15 @@
+"use client";
+
+import { useTranslations } from "@/hooks";
+
 export default function Stack() {
+  const t = useTranslations('stack');
+
   return (
     <section id="stack" className="py-24 px-4">
       <div className="max-w-6xl mx-auto text-center">
         <h2 className="text-4xl font-bold text-white mb-12">
-          Tecnologías que domino
+          {t('title')}
         </h2>
 
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 justify-items-center">

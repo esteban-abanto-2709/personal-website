@@ -12,4 +12,5 @@ export interface ProjectItemProps {
   techStack: string[];
   link: string;
   year: string;
+  viewProject: string;
 }

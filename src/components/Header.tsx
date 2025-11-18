@@ -1,8 +1,10 @@
 "use client";
 
-import { useScrollSpy, useScrollToSection } from "@/hooks";
+import { useScrollSpy, useScrollToSection, useTranslations } from "@/hooks";
+import LanguageDropdown from './LanguageDropdown';
 
 export default function Header() {
+  const t = useTranslations('navigation');
   const activeSection = useScrollSpy({ offset: 100 });
   const scrollToSection = useScrollToSection();
 
@@ -22,33 +24,40 @@ export default function Header() {
               Esteban Abanto
             </span>
             <span className="text-gray-400 text-xs">
-              Desarrollador de software
+              {t('title')}
             </span>
           </div>
         </button>
 
         <nav className="flex items-center gap-6 text-sm font-medium">
           <button
-            className={`nav-link cursor-pointer ${activeSection === "experience" ? "active" : ""}`}
+            className={`nav-link cursor-pointer 
+              ${activeSection === "experience" ? "active" : ""}`}
             type="button"
             onClick={() => scrollToSection("experience")}
           >
-            Experiencia
+            {t('experience')}
           </button>
+
           <button
-            className={`nav-link cursor-pointer ${activeSection === "projects" ? "active" : ""}`}
+            className={`nav-link cursor-pointer 
+              ${activeSection === "projects" ? "active" : ""}`}
             type="button"
             onClick={() => scrollToSection("projects")}
           >
-            Proyectos
+            {t('projects')}
           </button>
+
           <button
-            className={`nav-link cursor-pointer ${activeSection === "contact" ? "active" : ""}`}
+            className={`nav-link cursor-pointer 
+              ${activeSection === "contact" ? "active" : ""}`}
             type="button"
             onClick={() => scrollToSection("contact")}
           >
-            Contacto
+            {t('contact')}
           </button>
+
+          <LanguageDropdown />
         </nav>
       </div>
     </header>

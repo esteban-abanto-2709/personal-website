@@ -1,7 +1,13 @@
+"use client";
+
+import { useTranslations } from "@/hooks";
+
 export default function Footer() {
+  const t = useTranslations('footer');
+
   return (
     <footer className="mt-24 py-8 border-t border-white/10 text-center text-sm text-gray-500">
-      <p>&copy; 2025 Esteban Abanto. Hecho con ❤️ y dedicación.</p>
+      <p>&copy; 2025 Esteban Abanto. {t('madeWith')}</p>
       <div className="mt-4 flex justify-center gap-6">
         <a
           href="mailto:esteban.abanto.2709@gmail.com"

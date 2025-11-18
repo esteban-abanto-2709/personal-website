@@ -6,6 +6,7 @@ export default function ProjectItem({
   techStack,
   link,
   year,
+  viewProject
 }: ProjectItemProps) {
   return (
     <div className="glass-card p-6 rounded-2xl border border-white/10 flex flex-col justify-between">
@@ -27,7 +28,7 @@ export default function ProjectItem({
         rel="noopener noreferrer"
         className="mt-auto text-emerald-300 hover:underline font-medium"
       >
-        Ver proyecto →
+        {viewProject} →
       </a>
     </div>
   );
