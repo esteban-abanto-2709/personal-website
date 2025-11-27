@@ -9,8 +9,11 @@ export default function Header() {
   const scrollToSection = useScrollToSection();
 
   return (
-    <header className="fixed top-6 left-1/2 transform -translate-x-1/2 z-50 w-[90vw] max-w-5xl px-6 py-4 rounded-2xl backdrop-blur-md bg-white/5 border border-white/10 shadow-lg">
+    <header className="fixed top-6 left-1/2 -translate-x-1/2 z-50 w-[90vw] max-w-5xl px-6 py-4 
+      rounded-2xl backdrop-blur-md bg-white/5 border border-white/10 shadow-lg">
+
       <div className="flex items-center justify-between">
+
         <button
           className="flex items-center gap-3 cursor-pointer"
           type="button"
@@ -29,36 +32,37 @@ export default function Header() {
           </div>
         </button>
 
-        <nav className="flex items-center gap-6 text-sm font-medium">
-          <button
-            className={`nav-link cursor-pointer 
-              ${activeSection === "experience" ? "active" : ""}`}
-            type="button"
-            onClick={() => scrollToSection("experience")}
-          >
-            {t('experience')}
-          </button>
+        <div className="flex items-center gap-6">
 
-          <button
-            className={`nav-link cursor-pointer 
-              ${activeSection === "projects" ? "active" : ""}`}
-            type="button"
-            onClick={() => scrollToSection("projects")}
-          >
-            {t('projects')}
-          </button>
+          <nav className="hidden md:flex items-center gap-6 text-sm font-medium">
+            <button
+              className={`nav-link cursor-pointer ${activeSection === "experience" ? "active" : ""}`}
+              type="button"
+              onClick={() => scrollToSection("experience")}
+            >
+              {t('experience')}
+            </button>
 
-          <button
-            className={`nav-link cursor-pointer 
-              ${activeSection === "contact" ? "active" : ""}`}
-            type="button"
-            onClick={() => scrollToSection("contact")}
-          >
-            {t('contact')}
-          </button>
+            <button
+              className={`nav-link cursor-pointer ${activeSection === "projects" ? "active" : ""}`}
+              type="button"
+              onClick={() => scrollToSection("projects")}
+            >
+              {t('projects')}
+            </button>
+
+            <button
+              className={`nav-link cursor-pointer ${activeSection === "contact" ? "active" : ""}`}
+              type="button"
+              onClick={() => scrollToSection("contact")}
+            >
+              {t('contact')}
+            </button>
+          </nav>
 
           <LanguageDropdown />
-        </nav>
+        </div>
+
       </div>
     </header>
   );
