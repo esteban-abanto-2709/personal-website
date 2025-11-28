@@ -1,79 +1,66 @@
 "use client";
 
+import { useTranslations, useMessages } from "@/hooks";
+
 export default function Stack() {
+  const t = useTranslations("stack");
+  const messages = useMessages();
+  const skills = messages.stack.skills;
+  const categories = messages.stack.categories;
+  const levels = messages.stack.levels;
+
   return (
     <section id="stack" className="py-24 px-4">
       <div className="max-w-7xl mx-auto">
         <h2 className="text-4xl font-bold text-white text-center mb-16">
-          Technical Stack
+          {t("title")}
         </h2>
 
-        {/* --------- ÁREA FUERTE: GAME DEVELOPMENT --------- */}
+        {/* Game Development - Principal */}
         <StackCategory
-          title="Game Development (Main Focus)"
+          title={categories.gamedev}
           gradient="from-emerald-400 to-cyan-400"
-          items={[
-            { name: "Unity / C#", level: "Senior", percentage: 92, color: "emerald" },
-            { name: "Game Architecture & Patterns", level: "Mid–Senior", percentage: 88, color: "emerald" },
-            { name: "Optimization & Profiler", level: "Mid", percentage: 84, color: "emerald" },
-            { name: "Multiplayer (Photon)", level: "Mid", percentage: 78, color: "emerald" },
-            { name: "Level Design & Mechanics", level: "Mid", percentage: 72, color: "emerald" },
-          ]}
+          items={skills.gamedev}
+          levels={levels}
+          color="emerald"
         />
 
-        {/* --------- SOFTWARE ENGINEERING --------- */}
+        {/* Software Engineering */}
         <StackCategory
-          title="Software Engineering"
+          title={categories.software}
           gradient="from-emerald-300 to-cyan-300"
-          items={[
-            { name: "Clean Code", level: "Senior", percentage: 90, color: "cyan" },
-            { name: "SOLID Principles", level: "Mid–Senior", percentage: 85, color: "cyan" },
-            { name: "Design Patterns (GoF)", level: "Mid", percentage: 82, color: "cyan" },
-            { name: "Refactoring", level: "Senior", percentage: 90, color: "cyan" },
-            { name: "Git / GitHub", level: "Mid", percentage: 85, color: "cyan" },
-            { name: "Unit Testing (concepts)", level: "Junior–Mid", percentage: 70, color: "cyan" },
-          ]}
+          items={skills.software}
+          levels={levels}
+          color="cyan"
         />
 
-        {/* --------- BACKEND --------- */}
+        {/* Backend & Frontend - Grid */}
         <div className="grid md:grid-cols-2 gap-8 mt-10">
           <StackCategory
-            title="Backend Development"
+            title={categories.backend}
             gradient="from-gray-300 to-gray-100"
-            items={[
-              { name: "TypeScript", level: "Mid", percentage: 78, color: "gray" },
-              { name: "Node.js / Express", level: "Junior–Mid", percentage: 68, color: "gray" },
-              { name: "SQL (MySQL / PostgreSQL / SQL Server)", level: "Mid", percentage: 72, color: "gray" },
-              { name: "REST APIs", level: "Mid", percentage: 80, color: "gray" },
-              { name: "Docker (basic)", level: "Junior", percentage: 55, color: "gray" },
-              { name: "Microservices (theory)", level: "Junior", percentage: 50, color: "gray" },
-            ]}
+            items={skills.backend}
+            levels={levels}
+            color="gray"
           />
 
-          {/* --------- FRONTEND --------- */}
           <StackCategory
-            title="Frontend Development"
+            title={categories.frontend}
             gradient="from-gray-300 to-gray-100"
-            items={[
-              { name: "React", level: "Junior–Mid", percentage: 65, color: "gray" },
-              { name: "Next.js", level: "Junior–Mid", percentage: 62, color: "gray" },
-              { name: "TailwindCSS", level: "Mid", percentage: 75, color: "gray" },
-              { name: "HTML / CSS", level: "Mid", percentage: 78, color: "gray" },
-              { name: "Responsive UI", level: "Junior–Mid", percentage: 70, color: "gray" },
-            ]}
+            items={skills.frontend}
+            levels={levels}
+            color="gray"
           />
         </div>
 
-        {/* --------- CLOUD & DEVOPS --------- */}
+        {/* Cloud & DevOps */}
         <div className="mt-10">
           <StackCategory
-            title="Cloud & DevOps (Learning)"
+            title={categories.cloud}
             gradient="from-gray-400 to-gray-200"
-            items={[
-              { name: "CI/CD (theory)", level: "Junior", percentage: 45, color: "gray" },
-              { name: "AWS / Azure (intro)", level: "Junior", percentage: 35, color: "gray" },
-              { name: "Docker Compose", level: "Junior", percentage: 50, color: "gray" },
-            ]}
+            items={skills.cloud}
+            levels={levels}
+            color="gray"
           />
         </div>
       </div>
@@ -83,7 +70,21 @@ export default function Stack() {
 
 /* --------------------- COMPONENTES --------------------- */
 
-function StackCategory({ title, gradient, items }: any) {
+interface StackCategoryProps {
+  title: string;
+  gradient: string;
+  items: Array<{ name: string; level: string; percentage: number }>;
+  levels: Record<string, string>;
+  color: "emerald" | "cyan" | "gray";
+}
+
+function StackCategory({
+  title,
+  gradient,
+  items,
+  levels,
+  color,
+}: StackCategoryProps) {
   return (
     <div className="glass-card p-8 rounded-2xl border border-white/10 mb-10">
       <h3
@@ -93,13 +94,13 @@ function StackCategory({ title, gradient, items }: any) {
       </h3>
 
       <div className="space-y-4">
-        {items.map((item: any, index: number) => (
+        {items.map((item, index) => (
           <SkillBar
             key={index}
             name={item.name}
-            level={item.level}
+            level={levels[item.level as keyof typeof levels]}
             percentage={item.percentage}
-            color={item.color}
+            color={color}
           />
         ))}
       </div>
@@ -107,17 +108,14 @@ function StackCategory({ title, gradient, items }: any) {
   );
 }
 
-function SkillBar({
-  name,
-  level,
-  percentage,
-  color,
-}: {
+interface SkillBarProps {
   name: string;
   level: string;
   percentage: number;
   color: "emerald" | "cyan" | "gray";
-}) {
+}
+
+function SkillBar({ name, level, percentage, color }: SkillBarProps) {
   const colorClasses = {
     emerald: "bg-emerald-500",
     cyan: "bg-cyan-500",

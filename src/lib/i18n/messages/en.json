@@ -139,7 +139,158 @@
     ]
   },
   "stack": {
-    "title": "Technologies I Master"
+    "title": "Technical Stack",
+    "categories": {
+      "gamedev": "Game Development (Main Focus)",
+      "software": "Software Engineering",
+      "backend": "Backend Development",
+      "frontend": "Frontend Development",
+      "cloud": "Cloud & DevOps (Learning)"
+    },
+    "levels": {
+      "senior": "Senior",
+      "midSenior": "Mid–Senior",
+      "mid": "Mid",
+      "juniorMid": "Junior–Mid",
+      "junior": "Junior"
+    },
+    "skills": {
+      "gamedev": [
+        {
+          "name": "Unity / C#",
+          "level": "senior",
+          "percentage": 92
+        },
+        {
+          "name": "Game Architecture & Patterns",
+          "level": "midSenior",
+          "percentage": 88
+        },
+        {
+          "name": "Optimization & Profiler",
+          "level": "mid",
+          "percentage": 84
+        },
+        {
+          "name": "Multiplayer (Photon)",
+          "level": "mid",
+          "percentage": 78
+        },
+        {
+          "name": "Level Design & Mechanics",
+          "level": "mid",
+          "percentage": 72
+        }
+      ],
+      "software": [
+        {
+          "name": "Clean Code",
+          "level": "senior",
+          "percentage": 90
+        },
+        {
+          "name": "SOLID Principles",
+          "level": "midSenior",
+          "percentage": 85
+        },
+        {
+          "name": "Design Patterns (GoF)",
+          "level": "mid",
+          "percentage": 82
+        },
+        {
+          "name": "Refactoring",
+          "level": "senior",
+          "percentage": 90
+        },
+        {
+          "name": "Git / GitHub",
+          "level": "mid",
+          "percentage": 85
+        },
+        {
+          "name": "Unit Testing (concepts)",
+          "level": "juniorMid",
+          "percentage": 70
+        }
+      ],
+      "backend": [
+        {
+          "name": "TypeScript",
+          "level": "mid",
+          "percentage": 78
+        },
+        {
+          "name": "Node.js / Express",
+          "level": "juniorMid",
+          "percentage": 68
+        },
+        {
+          "name": "SQL (MySQL / PostgreSQL / SQL Server)",
+          "level": "mid",
+          "percentage": 72
+        },
+        {
+          "name": "REST APIs",
+          "level": "mid",
+          "percentage": 80
+        },
+        {
+          "name": "Docker (basic)",
+          "level": "junior",
+          "percentage": 55
+        },
+        {
+          "name": "Microservices (theory)",
+          "level": "junior",
+          "percentage": 50
+        }
+      ],
+      "frontend": [
+        {
+          "name": "React",
+          "level": "juniorMid",
+          "percentage": 65
+        },
+        {
+          "name": "Next.js",
+          "level": "juniorMid",
+          "percentage": 62
+        },
+        {
+          "name": "TailwindCSS",
+          "level": "mid",
+          "percentage": 75
+        },
+        {
+          "name": "HTML / CSS",
+          "level": "mid",
+          "percentage": 78
+        },
+        {
+          "name": "Responsive UI",
+          "level": "juniorMid",
+          "percentage": 70
+        }
+      ],
+      "cloud": [
+        {
+          "name": "CI/CD (theory)",
+          "level": "junior",
+          "percentage": 45
+        },
+        {
+          "name": "AWS / Azure (intro)",
+          "level": "junior",
+          "percentage": 35
+        },
+        {
+          "name": "Docker Compose",
+          "level": "junior",
+          "percentage": 50
+        }
+      ]
+    }
   },
   "contact": {
     "title": "Contact Me",

@@ -16,6 +16,20 @@ export interface Project {
   year: string;
 }
 
+export interface Skill {
+  name: string;
+  level: string;
+  percentage: number;
+}
+
+export interface StackCategory {
+  gamedev: Skill[];
+  software: Skill[];
+  backend: Skill[];
+  frontend: Skill[];
+  cloud: Skill[];
+}
+
 export interface Messages {
   navigation: {
     title: string;
@@ -43,6 +57,21 @@ export interface Messages {
   };
   stack: {
     title: string;
+    categories: {
+      gamedev: string;
+      software: string;
+      backend: string;
+      frontend: string;
+      cloud: string;
+    };
+    levels: {
+      senior: string;
+      midSenior: string;
+      mid: string;
+      juniorMid: string;
+      junior: string;
+    };
+    skills: StackCategory;
   };
   contact: {
     title: string;

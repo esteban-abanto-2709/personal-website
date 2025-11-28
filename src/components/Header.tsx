@@ -9,8 +9,7 @@ export default function Header() {
   const scrollToSection = useScrollToSection();
 
   return (
-    <header className="fixed top-6 left-1/2 -translate-x-1/2 z-50 w-[90vw] max-w-5xl px-6 py-4 
-      rounded-2xl backdrop-blur-md bg-white/5 border border-white/10 shadow-lg">
+    <header className="fixed top-6 left-1/2 -translate-x-1/2 z-50 w-[90vw] max-w-5xl px-6 py-4 rounded-2xl backdrop-blur-md bg-white/5 border border-white/10 shadow-lg">
 
       <div className="flex items-center justify-between">
 
