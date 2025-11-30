@@ -1,7 +1,10 @@
 import type { Metadata } from "next";
 import { LocaleProvider } from "@/lib/i18n/components/LocaleProvider";
-import { Analytics } from '@vercel/analytics/react';
 import { getMessages } from "@/lib/i18n";
+
+import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/next";
+
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -11,8 +14,8 @@ export const metadata: Metadata = {
 
 export default async function RootLayout({
   children,
-}: Readonly<{ children: React.ReactNode; }>) {
-  const initialMessages = await getMessages('en');
+}: Readonly<{ children: React.ReactNode }>) {
+  const initialMessages = await getMessages("en");
 
   return (
     <html lang="en">
@@ -22,6 +25,7 @@ export default async function RootLayout({
         </LocaleProvider>
 
         <Analytics />
+        <SpeedInsights />
       </body>
     </html>
   );
