@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { LocaleProvider } from "@/lib/i18n/components/LocaleProvider";
+import { Analytics } from '@vercel/analytics/react';
 import { getMessages } from "@/lib/i18n";
 import "./globals.css";
 
@@ -19,6 +20,8 @@ export default async function RootLayout({
         <LocaleProvider initialMessages={initialMessages}>
           {children}
         </LocaleProvider>
+
+        <Analytics />
       </body>
     </html>
   );
