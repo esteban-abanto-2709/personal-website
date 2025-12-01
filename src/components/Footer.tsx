@@ -1,6 +1,6 @@
 "use client";
 
-import { Github, Linkedin, Mail } from "lucide-react";
+import { Github, Linkedin } from "lucide-react";
 import SocialIcon from "@/ui/SocialIcon";
 
 import { useTranslations } from "@/hooks";
@@ -29,16 +29,8 @@ export default function Footer() {
             href="https://github.com/esteban-abanto-2709"
             ariaLabel="GitHub"
             Icon={Github}
-            glowClass="bg-purple-500/20"
-            hoverClass="group-hover:text-purple-400"
-          />
-
-          <SocialIcon
-            href="mailto:esteban.abanto.2709@gmail.com"
-            ariaLabel="Email"
-            Icon={Mail}
-            glowClass="bg-yellow-500/20"
-            hoverClass="group-hover:text-yellow-400"
+            glowClass="bg-green-500/20"
+            hoverClass="group-hover:text-green-400"
           />
         </div>
       </div>
