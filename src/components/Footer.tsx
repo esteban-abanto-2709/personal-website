@@ -1,47 +1,46 @@
 "use client";
-import { Linkedin, Github } from 'lucide-react'
+
+import { Github, Linkedin, Mail } from "lucide-react";
+import SocialIcon from "@/ui/SocialIcon";
+
 import { useTranslations } from "@/hooks";
 
 export default function Footer() {
-  const t = useTranslations('footer');
+  const t = useTranslations("footer");
 
   return (
-    <footer className="mt-24 py-8 border-t border-white/10 text-center text-sm text-gray-500">
-      <p>&copy; 2025 Esteban Abanto. {t('madeWith')}</p>
-      <div className="mt-4 flex justify-center gap-6">
-        <a
-          href="mailto:esteban.abanto.2709@gmail.com"
-          className="hover:text-white transition"
-        >
-          esteban.abanto.2709@gmail.com
-        </a>
+    <footer className="mt-24 py-6 border-t border-white/10 text-center text-sm text-gray-500">
+      <div className="flex flex-col md:flex-row justify-between items-center max-w-7xl mx-auto">
+        <div className="mb-2 md:mb-0">
+          <p>{t("madeWith")}</p>
+          <p>&copy; 2025 Esteban Abanto.</p>
+        </div>
 
-        <a
-          href="https://www.linkedin.com/in/esteban-abanto/"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="group relative"
-          aria-label="LinkedIn"
-        >
-          <div className="absolute inset-0 bg-blue-500/20 rounded-lg blur-md opacity-0 group-hover:opacity-100 transition-opacity" />
-          <div className="relative w-10 h-10 bg-white/10 backdrop-blur-sm rounded-lg flex items-center justify-center border border-white/20 hover:border-blue-400/50 transition-all group-hover:bg-white/15">
-            <Linkedin className="w-5 h-5 text-white group-hover:text-blue-400 transition-colors" />
-          </div>
-        </a>
+        <div className="flex items-center space-x-4">
+          <SocialIcon
+            href="https://www.linkedin.com/in/esteban-abanto/"
+            ariaLabel="LinkedIn"
+            Icon={Linkedin}
+            glowClass="bg-blue-500/20"
+            hoverClass="group-hover:text-blue-400"
+          />
 
-        <a
-          href="https://github.com/esteban-abanto-2709"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="group relative"
-          aria-label="GitHub"
-        >
-          <div className="absolute inset-0 bg-purple-500/20 rounded-lg blur-md opacity-0 group-hover:opacity-100 transition-opacity" />
-          <div className="relative w-10 h-10 bg-white/10 backdrop-blur-sm rounded-lg flex items-center justify-center border border-white/20 hover:border-purple-400/50 transition-all group-hover:bg-white/15">
-            <Github className="w-5 h-5 text-white group-hover:text-purple-400 transition-colors" />
-          </div>
-        </a>
-        
+          <SocialIcon
+            href="https://github.com/esteban-abanto-2709"
+            ariaLabel="GitHub"
+            Icon={Github}
+            glowClass="bg-purple-500/20"
+            hoverClass="group-hover:text-purple-400"
+          />
+
+          <SocialIcon
+            href="mailto:esteban.abanto.2709@gmail.com"
+            ariaLabel="Email"
+            Icon={Mail}
+            glowClass="bg-yellow-500/20"
+            hoverClass="group-hover:text-yellow-400"
+          />
+        </div>
       </div>
     </footer>
   );
