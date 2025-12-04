@@ -3,7 +3,7 @@
     "title": "Desarrollador de Software",
     "experience": "Experiencia",
     "projects": "Proyectos",
-    "contact": "Contacto"
+    "stack": "Stack"
   },
   "hero": {
     "greeting": "Hola,",
@@ -11,7 +11,6 @@
     "name": "Esteban Abanto",
     "title": "Desarrollador de Software",
     "description": "Tengo experiencia construyendo aplicaciones web modernas, videojuegos interactivos y soluciones full stack. Me especializo en crear productos digitales con enfoque en rendimiento, diseño y experiencia de usuario.",
-    "viewProjects": "Ir a Proyectos",
     "downloadCV": "Descargar CV"
   },
   "experience": {
@@ -293,15 +292,8 @@
     }
   },
   "contact": {
-    "title": "Contáctame",
-    "description": "¿Tienes un proyecto o colaboración en mente?",
-    "description2": "Si crees que tu idea encaja con mi perfil, coordinemos y",
-    "description3": "veamos si podemos trabajar juntos.",
-    "copyEmail": "Copiar email",
-    "emailCopied": "✓ Email copiado al clipboard",
-    "sendProposal": "Enviar propuesta",
-    "letsTalk": "Hablemos",
-    "connect": "Conectemonos"
+    "title": "¿Listo para colaborar?",
+    "description": "Siempre estoy abierto a discutir nuevos proyectos y oportunidades."
   },
   "footer": {
     "madeWith": "Hecho con ❤️ y dedicación."

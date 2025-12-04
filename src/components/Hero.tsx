@@ -1,17 +1,15 @@
 "use client";
 
 import Image from "next/image";
-import { useScrollToSection, useTranslations } from "@/hooks";
+import { useTranslations } from "@/hooks";
+import { Github, Linkedin, Instagram, Download } from "lucide-react";
+import SocialButton from "@/ui/SocialButton";
 
 export default function Hero() {
   const t = useTranslations("hero");
-  const scrollToSection = useScrollToSection();
 
   return (
-    <section
-      id="hero"
-      className="min-h-screen flex items-center justify-center px-4 pt-20"
-    >
+    <section id="hero" className="min-h-screen flex items-center justify-center px-4 pt-24">
       <div className="w-full max-w-7xl mx-auto">
         <div className="p-6 sm:p-8 lg:p-12 rounded-3xl bg-white/5 backdrop-blur-md border border-white/10 shadow-2xl">
 
@@ -24,7 +22,7 @@ export default function Hero() {
               </span>
             </h1>
 
-            <div className="flex justify-center lg:justify-end lg:col-start-2 lg:row-start-1 lg:row-span-3">
+            <div className="flex justify-center lg:justify-end lg:col-start-2 lg:row-start-1 lg:row-span-4">
               <div className="relative w-56 h-56 sm:w-64 sm:h-64 md:w-80 md:h-80">
                 <div className="w-full h-full rounded-full p-5 bg-linear-to-br from-emerald-500/20 to-cyan-500/20 border border-white/10 flex items-center justify-center backdrop-blur-sm shadow-inner overflow-hidden">
                   <Image
@@ -44,25 +42,40 @@ export default function Hero() {
               {t("description")}
             </p>
 
-            <div className="flex flex-wrap justify-center lg:justify-start gap-4 pt-2 lg:col-start-1 lg:row-start-3">
-              <button
-                className="bg-linear-to-br from-emerald-500 to-cyan-500 hover:opacity-90 text-white px-6 py-3 rounded-xl text-sm font-semibold flex items-center gap-2 shadow-lg transition"
-                type="button"
-                onClick={() => scrollToSection("projects")}
+            <div className="flex justify-center lg:justify-start lg:col-start-1 lg:row-start-3">
+              <a href="/CV_Esteban_Abanto_EN.pdf" download
+                className="bg-linear-to-br from-emerald-500 to-cyan-500 hover:from-emerald-600 hover:to-cyan-600 text-white px-8 py-3.5 rounded-xl text-base font-semibold flex items-center gap-2 shadow-lg hover:shadow-xl transition-all duration-200 hover:scale-105"
               >
-                {t("viewProjects")}
-              </button>
-
-              <a
-                href="/CV_Esteban_Abanto_EN.pdf"
-                download
-                className="bg-white/10 hover:bg-white/20 border border-white/20 text-white px-6 py-3 rounded-xl text-sm font-medium flex items-center gap-2 transition"
-              >
+                <Download className="w-5 h-5" />
                 {t("downloadCV")}
               </a>
             </div>
 
+            <div className="flex flex-wrap justify-center lg:justify-start gap-3 lg:col-start-1 lg:row-start-4">
+              <SocialButton
+                href="https://www.linkedin.com/in/esteban-abanto/"
+                icon={Linkedin}
+                label="LinkedIn"
+                colorClass="bg-blue-500/20 hover:bg-blue-500/30 border-blue-500/30 text-blue-300"
+              />
+
+              <SocialButton
+                href="https://github.com/esteban-abanto-2709"
+                icon={Github}
+                label="GitHub"
+                colorClass="bg-green-500/20 hover:bg-green-500/30 border-green-500/30 text-green-300"
+              />
+
+              <SocialButton
+                href="https://www.instagram.com/esteban.abanto.2709/"
+                icon={Instagram}
+                label="Instagram"
+                colorClass="bg-pink-500/20 hover:bg-pink-500/30 border-pink-500/30 text-pink-300"
+              />
+            </div>
+
           </div>
+          
         </div>
       </div>
     </section>

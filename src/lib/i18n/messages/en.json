@@ -3,7 +3,7 @@
     "title": "Software Developer",
     "experience": "Experience",
     "projects": "Projects",
-    "contact": "Contact"
+    "stack": "Stack"
   },
   "hero": {
     "greeting": "Hello,",
@@ -11,7 +11,6 @@
     "name": "Esteban Abanto",
     "title": "Software Developer",
     "description": "I have experience building modern web applications, interactive video games, and full-stack solutions. I specialize in creating digital products with a focus on performance, design, and user experience.",
-    "viewProjects": "View Projects",
     "downloadCV": "Download CV"
   },
   "experience": {
@@ -293,15 +292,8 @@
     }
   },
   "contact": {
-    "title": "Contact Me",
-    "description": "Have a project or collaboration in mind?",
-    "description2": "If you think your idea fits my profile, let's coordinate and",
-    "description3": "see if we can work together.",
-    "copyEmail": "Copy email",
-    "emailCopied": "✓ Email copied to clipboard",
-    "sendProposal": "Send proposal",
-    "letsTalk": "Let's talk",
-    "connect": "Connect"
+    "title": "Ready to collaborate?",
+    "description": "I'm always open to discussing new projects and opportunities."
   },
   "footer": {
     "madeWith": "Made with ❤️ and dedication."

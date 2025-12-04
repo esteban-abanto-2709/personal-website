@@ -51,11 +51,11 @@ export default function Header() {
             </button>
 
             <button
-              className={`nav-link cursor-pointer ${activeSection === "contact" ? "active" : ""}`}
+              className={`nav-link cursor-pointer ${activeSection === "stack" ? "active" : ""}`}
               type="button"
-              onClick={() => scrollToSection("contact")}
+              onClick={() => scrollToSection("stack")}
             >
-              {t('contact')}
+              {t('stack')}
             </button>
           </nav>
 

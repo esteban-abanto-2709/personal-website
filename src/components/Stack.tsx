@@ -12,7 +12,7 @@ export default function Stack() {
   return (
     <section id="stack" className="py-24 px-4">
       <div className="max-w-7xl mx-auto">
-        <h2 className="text-4xl font-bold text-white text-center mb-16">
+        <h2 className="text-4xl font-bold text-white text-center my-16">
           {t("title")}
         </h2>
 
