@@ -67,6 +67,30 @@
     "viewProject": "Ver proyecto",
     "items": [
       {
+        "title": "Que Gane el Mejor",
+        "description": "Sistema de competencia educativa para estudiantes de secundaria, transmitido nacionalmente por TV Perú. Gestión de 28 colegios y más de 600 participantes.",
+        "techStack": [
+          "C#",
+          ".NET",
+          "Real-time Systems",
+          "Broadcast Software"
+        ],
+        "link": "/tv-peru/que-gane-el-mejor",
+        "year": "2021 - Presente"
+      },
+      {
+        "title": "Pukllaspa Yachay",
+        "description": "Programa concurso en quechua para la promoción del idioma. Sistema de competencia en tiempo real con gestión de participantes y puntajes en vivo.",
+        "techStack": [
+          "C#",
+          ".NET",
+          "Real-time Systems",
+          "Broadcast Software"
+        ],
+        "link": "/tv-peru/pukllaspa-yachay",
+        "year": "2021"
+      },
+      {
         "title": "Ephemeral Chat",
         "description": "App de mensajería efímera y anónima en tiempo real, sin almacenamiento de datos. Usando React, Socket.IO y Express.",
         "techStack": [

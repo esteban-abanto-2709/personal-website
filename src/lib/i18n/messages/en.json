@@ -67,6 +67,30 @@
     "viewProject": "View project",
     "items": [
       {
+        "title": "Que Gane el Mejor",
+        "description": "Educational competition system for high school students, broadcast nationally on TV Perú. Management of 28 schools and over 600 participants.",
+        "techStack": [
+          "C#",
+          ".NET",
+          "Real-time Systems",
+          "Broadcast Software"
+        ],
+        "link": "/tv-peru/que-gane-el-mejor",
+        "year": "2021 - Present"
+      },
+      {
+        "title": "Pukllaspa Yachay",
+        "description": "Quiz show in Quechua language for cultural promotion. Real-time competition system with live participant and scoring management.",
+        "techStack": [
+          "C#",
+          ".NET",
+          "Real-time Systems",
+          "Broadcast Software"
+        ],
+        "link": "/tv-peru/pukllaspa-yachay",
+        "year": "2021"
+      },
+      {
         "title": "Ephemeral Chat",
         "description": "Ephemeral and anonymous real-time messaging app, without data storage. Built with React, Socket.IO and Express.",
         "techStack": [
