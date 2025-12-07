@@ -3,7 +3,7 @@
 import Image from "next/image";
 import { useTranslations } from "@/hooks";
 import { useLocale } from "@/lib/i18n/components/LocaleProvider";
-import { Github, Linkedin, Instagram, Download } from "lucide-react";
+import { Github, Linkedin, Gamepad2, Download } from "lucide-react";
 import SocialButton from "@/ui/SocialButton";
 
 export default function Hero() {
@@ -57,7 +57,7 @@ export default function Hero() {
 
             <div className="flex flex-wrap justify-center lg:justify-start gap-3 lg:col-span-2 lg:row-start-4">
               <SocialButton
-                href="https://www.linkedin.com/in/esteban-abanto/"
+                href="https://www.linkedin.com/in/esteban-abanto"
                 icon={Linkedin}
                 label="LinkedIn"
                 colorClass="bg-blue-500/20 hover:bg-blue-500/30 border-blue-500/30 text-blue-300"
@@ -71,10 +71,10 @@ export default function Hero() {
               />
 
               <SocialButton
-                href="https://www.instagram.com/esteban.abanto.2709/"
-                icon={Instagram}
-                label="Instagram"
-                colorClass="bg-pink-500/20 hover:bg-pink-500/30 border-pink-500/30 text-pink-300"
+                href="https://estebanabanto2709.itch.io"
+                icon={Gamepad2}
+                label="Itch.io"
+                colorClass="bg-red-500/20 hover:bg-red-500/30 border-red-500/30 text-red-300"
               />
             </div>
 

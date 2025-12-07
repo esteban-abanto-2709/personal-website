@@ -1,6 +1,6 @@
 "use client";
 
-import { Github, Linkedin, Instagram } from "lucide-react";
+import { Github, Linkedin, Gamepad2 } from "lucide-react";
 import SocialIcon from "@/ui/SocialIcon";
 import { useTranslations } from "@/hooks";
 
@@ -35,11 +35,11 @@ export default function Footer() {
             />
 
             <SocialIcon
-              href="https://www.instagram.com/esteban.abanto.2709/"
-              ariaLabel="Instagram"
-              Icon={Instagram}
-              glowClass="bg-pink-500/20"
-              hoverClass="group-hover:text-pink-400"
+              href="https://estebanabanto2709.itch.io"
+              ariaLabel="Itch.io"
+              Icon={Gamepad2}
+              glowClass="bg-red-500/20"
+              hoverClass="group-hover:text-red-400"
             />
           </div>
         </div>
