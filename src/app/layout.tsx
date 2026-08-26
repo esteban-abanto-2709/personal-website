@@ -9,7 +9,7 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: "Esteban Abanto | Portafolio",
-  description: "Software Developer - Backend & Game Development",
+  description: "Software Developer - Full-Stack Web & C#/.NET",
 };
 
 export default async function RootLayout({

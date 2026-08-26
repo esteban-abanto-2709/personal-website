@@ -10,7 +10,7 @@
     "iam": "Soy",
     "name": "Esteban Abanto",
     "title": "Desarrollador de Software",
-    "description": "Tengo experiencia construyendo aplicaciones web modernas, videojuegos interactivos y soluciones full stack. Me especializo en crear productos digitales con enfoque en rendimiento, diseño y experiencia de usuario.",
+    "description": "Construyo aplicaciones web full-stack y sistemas en tiempo real. Más de 5 años entregando software confiable en entornos de producción exigentes, hoy enfocado en TypeScript, NestJS, Next.js y Docker.",
     "downloadCV": "Descargar CV"
   },
   "experience": {
@@ -101,6 +101,30 @@
         "year": "2021"
       },
       {
+        "title": "Gym Tracker",
+        "description": "App full-stack self-hosted para registrar y analizar entrenamientos. Todo el stack corre en Docker; frontend expuesto vía Cloudflare Tunnel.",
+        "techStack": [
+          "NestJS",
+          "Next.js",
+          "PostgreSQL",
+          "Docker"
+        ],
+        "link": "https://github.com/esteban-abanto-2709/gym-tracker",
+        "year": "2026"
+      },
+      {
+        "title": "Rally",
+        "description": "Plataforma de gestión de tareas con autenticación JWT, CRUD de proyectos y tareas, y contenedorización completa con Docker.",
+        "techStack": [
+          "NestJS",
+          "Next.js",
+          "Prisma",
+          "Docker"
+        ],
+        "link": "https://github.com/esteban-abanto-2709/rally-app",
+        "year": "2026"
+      },
+      {
         "title": "Ephemeral Chat",
         "description": "App de mensajería efímera y anónima en tiempo real, sin almacenamiento de datos. Usando React, Socket.IO y Express.",
         "techStack": [
@@ -111,219 +135,26 @@
         ],
         "link": "https://ephemeral-chat-xuou.onrender.com",
         "year": "2025"
-      },
-      {
-        "title": "SOUL SWITCHEROO",
-        "description": "Videojuego desarrollado en una Game Jam como programador principal bajo el seudónimo 'Baphomet'. Mecánicas de intercambio de almas.",
-        "techStack": [
-          "Unity",
-          "C#",
-          "Game Jam",
-          "Mechanics"
-        ],
-        "link": "https://fecoramirez.itch.io/soul-switchero",
-        "year": "2021"
-      },
-      {
-        "title": "LANZÓN MONOLÍTICO",
-        "description": "Videojuego desarrollado en una Game Jam bajo el seudónimo 'Baphomet'. Desempeñé el rol de programador principal en este proyecto de temática cultural.",
-        "techStack": [
-          "Unity",
-          "C#",
-          "Game Jam",
-          "Cultural"
-        ],
-        "link": "https://fecoramirez.itch.io/lanzon-monolitico",
-        "year": "2021"
-      },
-      {
-        "title": "ROCKIN",
-        "description": "Videojuego desarrollado durante una Game Jam bajo el seudónimo 'Baphomet'. Participé como programador principal en este proyecto de desarrollo rápido.",
-        "techStack": [
-          "Unity",
-          "C#",
-          "Game Jam"
-        ],
-        "link": "https://estebanabanto2709.itch.io/rockin",
-        "year": "2021"
-      },
-      {
-        "title": "SPACE INFINITY",
-        "description": "Videojuego de temática espacial donde participé como programador adjunto bajo el seudónimo 'Isaac Ortega'.",
-        "techStack": [
-          "Unity",
-          "C#",
-          "Game Programming"
-        ],
-        "link": "https://pindot-studio.itch.io/space-infinity",
-        "year": "2022"
-      },
-      {
-        "title": "DELTA SPACE",
-        "description": "Videojuego espacial donde participé como programador y diseñador bajo el seudónimo 'Isaac Ortega'. Posteriormente mejorado y publicado en la plataforma de Huawei.",
-        "techStack": [
-          "Unity",
-          "C#",
-          "Game Design"
-        ],
-        "link": "https://tls.itch.io/delta-space-d",
-        "year": "2022"
       }
     ]
   },
   "stack": {
     "title": "Stack Técnico",
     "categories": {
-      "gamedev": "Game Development (Enfoque Principal)",
-      "software": "Ingeniería de Software",
-      "backend": "Backend Development",
-      "frontend": "Frontend Development",
-      "cloud": "Cloud & DevOps (Aprendiendo)"
-    },
-    "levels": {
-      "senior": "Senior",
-      "midSenior": "Mid–Senior",
-      "mid": "Mid",
-      "juniorMid": "Junior–Mid",
-      "junior": "Junior"
+      "languages": "Lenguajes",
+      "backend": "Backend",
+      "frontend": "Frontend",
+      "databases": "Bases de datos",
+      "devops": "DevOps y Herramientas"
     },
     "skills": {
-      "gamedev": [
-        {
-          "name": "Unity / C#",
-          "level": "senior",
-          "percentage": 92
-        },
-        {
-          "name": "Arquitectura & Patrones de Juegos",
-          "level": "midSenior",
-          "percentage": 88
-        },
-        {
-          "name": "Optimización & Profiler",
-          "level": "mid",
-          "percentage": 84
-        },
-        {
-          "name": "Multiplayer (Photon)",
-          "level": "mid",
-          "percentage": 78
-        },
-        {
-          "name": "Level Design & Mecánicas",
-          "level": "mid",
-          "percentage": 72
-        }
-      ],
-      "software": [
-        {
-          "name": "Clean Code",
-          "level": "senior",
-          "percentage": 90
-        },
-        {
-          "name": "Principios SOLID",
-          "level": "midSenior",
-          "percentage": 85
-        },
-        {
-          "name": "Patrones de Diseño (GoF)",
-          "level": "mid",
-          "percentage": 82
-        },
-        {
-          "name": "Refactoring",
-          "level": "senior",
-          "percentage": 90
-        },
-        {
-          "name": "Git / GitHub",
-          "level": "mid",
-          "percentage": 85
-        },
-        {
-          "name": "Unit Testing (conceptos)",
-          "level": "juniorMid",
-          "percentage": 70
-        }
-      ],
-      "backend": [
-        {
-          "name": "TypeScript",
-          "level": "mid",
-          "percentage": 78
-        },
-        {
-          "name": "Node.js / Express",
-          "level": "juniorMid",
-          "percentage": 68
-        },
-        {
-          "name": "SQL (MySQL / PostgreSQL / SQL Server)",
-          "level": "mid",
-          "percentage": 72
-        },
-        {
-          "name": "REST APIs",
-          "level": "mid",
-          "percentage": 80
-        },
-        {
-          "name": "Docker (básico)",
-          "level": "junior",
-          "percentage": 55
-        },
-        {
-          "name": "Microservicios (teoría)",
-          "level": "junior",
-          "percentage": 50
-        }
-      ],
-      "frontend": [
-        {
-          "name": "React",
-          "level": "juniorMid",
-          "percentage": 65
-        },
-        {
-          "name": "Next.js",
-          "level": "juniorMid",
-          "percentage": 62
-        },
-        {
-          "name": "TailwindCSS",
-          "level": "mid",
-          "percentage": 75
-        },
-        {
-          "name": "HTML / CSS",
-          "level": "mid",
-          "percentage": 78
-        },
-        {
-          "name": "UI Responsive",
-          "level": "juniorMid",
-          "percentage": 70
-        }
-      ],
-      "cloud": [
-        {
-          "name": "CI/CD (teoría)",
-          "level": "junior",
-          "percentage": 45
-        },
-        {
-          "name": "AWS / Azure (intro)",
-          "level": "junior",
-          "percentage": 35
-        },
-        {
-          "name": "Docker Compose",
-          "level": "junior",
-          "percentage": 50
-        }
-      ]
-    }
+      "languages": ["TypeScript", "C#", "JavaScript", "SQL", "Python"],
+      "backend": ["NestJS", "Node.js", "Express", "REST APIs", "Prisma", "Supabase"],
+      "frontend": ["Next.js", "React", "TailwindCSS", "HTML / CSS"],
+      "databases": ["PostgreSQL", "MySQL", "SQL Server"],
+      "devops": ["Docker", "Docker Compose", "Git", "Linux", "Vercel", "Cloudflare", "Jira"]
+    },
+    "note": "Experiencia adicional en desarrollo de videojuegos con Unity y C# (game dev)."
   },
   "contact": {
     "title": "¿Listo para colaborar?",
