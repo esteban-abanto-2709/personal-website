@@ -44,7 +44,7 @@ Apr 2023 – Nov 2023 · Remote
 - Led the VR programming for a showcase experience on Mapuche cosmology presented to prospective investors, and built an interactive VR game for a contracted client project.
 
 ### Unity Software Developer — Rebel Rabbit
-Jan 2022 – Mar 2023 · Remote
+Feb 2022 – Mar 2023 · Remote
 
 - Contributed as a secondary programmer on a small studio's Unity/C# projects, implementing and fixing gameplay features, systems, and enemy behaviors alongside the lead programmer.
 - Collaborated in a small cross-functional team, joining design discussions and contributing gameplay-mechanic feedback.

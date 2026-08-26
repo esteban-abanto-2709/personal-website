@@ -25,10 +25,19 @@ desplegado en Vercel. Landing de una sola página + páginas de caso de estudio 
 Fuente en Markdown por idioma → DOCX (Pandoc) → PDF (Word). Requiere **Pandoc** y
 **MS Word** instalados (Windows).
 
-> **Fuente de verdad:** `cv/cv.en.md` y `cv/cv.es.md` son la referencia canónica de la
-> información profesional (experiencia, títulos, fechas, proyectos). El contenido del
-> sitio (`src/lib/i18n/messages/*.json`), los PDFs de `public/` y el perfil de LinkedIn
-> **derivan de aquí**: si el CV cambia, se propaga a los demás. Ver `docs/logbook/roadmap.md` (RM-004).
+> **Fuente de verdad, en dos niveles:**
+>
+> Los **hechos** (experiencia, fechas, títulos, qué documento prueba cada cosa) viven
+> fuera de este repo, en `Projects-GitHub/PersonalDevelopment/profesional/trayectoria/historial.md`.
+> Ahí está el historial completo, incluido lo que no entra en un CV.
+>
+> `cv/cv.en.md` y `cv/cv.es.md` son el **recorte ATS-safe** de ese historial y la
+> referencia canónica de lo que **se envía**. El contenido del sitio
+> (`src/lib/i18n/messages/*.json`), los PDFs de `public/` y LinkedIn **derivan del CV**:
+> si el CV cambia, se propaga a los demás. Ver `docs/logbook/roadmap.md` (RM-004).
+>
+> Dirección del flujo: `historial.md` → `cv.*.md` → sitio · PDFs · LinkedIn. Nunca al
+> revés. Un dato nuevo de un trabajo entra primero al historial.
 
 ```powershell
 # DOCX

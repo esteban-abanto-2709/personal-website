@@ -44,7 +44,7 @@ Abr 2023 – Nov 2023 · Remoto
 - Lideré la programación VR de una experiencia demostrativa sobre la cosmología mapuche presentada a inversores potenciales, y construí un juego VR interactivo para un proyecto con cliente contratado.
 
 ### Desarrollador de Software Unity — Rebel Rabbit
-Ene 2022 – Mar 2023 · Remoto
+Feb 2022 – Mar 2023 · Remoto
 
 - Contribuí como programador secundario en proyectos Unity/C# de un estudio pequeño, implementando y corrigiendo features de gameplay, sistemas y comportamientos de enemigos junto al programador principal.
 - Colaboré en un equipo pequeño y multidisciplinario, participando en discusiones de diseño y aportando feedback de mecánicas de juego.
