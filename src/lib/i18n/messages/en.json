@@ -18,7 +18,7 @@
     "jobs": [
       {
         "title": "Software Operator & Internal Developer",
-        "company": "TV Perú (Channel 7)",
+        "company": "IRTP / TV Perú",
         "years": "March 2021 - Present",
         "description": "Development of internal tools in C# to support live broadcasts. Responsible for operating software during TV programs, ensuring technical stability in high-pressure environments.",
         "stack": [
@@ -28,8 +28,19 @@
         ]
       },
       {
+        "title": "Software Developer",
+        "company": "GDP Studios",
+        "years": "November 2024 - February 2025",
+        "description": "Development and maintenance of production Unity/C# software for casino slot machines running on Linux (Ubuntu). Refactoring of disorganized code and mentoring a team of engineers on Unity's component architecture.",
+        "stack": [
+          "Unity",
+          "C#",
+          "Linux"
+        ]
+      },
+      {
         "title": "Virtual Reality Game Developer",
-        "company": "Tecnologías del Conocimiento SAC",
+        "company": "Tecnologías del Conocimiento S.A.C. (TDCLA)",
         "years": "April 2023 - November 2023",
         "description": "Design and programming of immersive experiences in virtual reality environments. Integration of advanced interactions with VR devices and coordination with multidisciplinary teams for the development of educational and simulation products.",
         "stack": [
@@ -52,11 +63,10 @@
       {
         "title": "2D Game Developer",
         "company": "Net Dreams - REGOB EIRL",
-        "years": "January 2021 - January 2022",
-        "description": "Creation of casual video games using GameMaker and JavaScript. Worked closely with designers and artists to meet demanding deadlines and ensure technical quality of projects.",
+        "years": "January 2021 - December 2021",
+        "description": "Creation of casual video games using Unity and C#. Worked closely with designers and artists to meet demanding deadlines and ensure technical quality of projects.",
         "stack": [
-          "GameMaker",
-          "JavaScript",
+          "Unity",
           "C#"
         ]
       }

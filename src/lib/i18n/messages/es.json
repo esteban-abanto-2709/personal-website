@@ -18,7 +18,7 @@
     "jobs": [
       {
         "title": "Operador de Software & Desarrollador Interno",
-        "company": "TV Perú (Canal 7)",
+        "company": "IRTP / TV Perú",
         "years": "Marzo 2021 - Presente",
         "description": "Desarrollo de herramientas internas en C# para apoyar transmisiones en vivo. Encargado de operar software durante programas televisivos, garantizando la estabilidad técnica en entornos de alta presión.",
         "stack": [
@@ -28,8 +28,19 @@
         ]
       },
       {
+        "title": "Desarrollador de Software",
+        "company": "GDP Studios",
+        "years": "Noviembre 2024 - Febrero 2025",
+        "description": "Desarrollo y mantenimiento de software Unity/C# en producción para máquinas tragamonedas sobre Linux (Ubuntu). Refactorización de código desordenado y mentoring a un equipo de ingenieros sobre la arquitectura de componentes de Unity.",
+        "stack": [
+          "Unity",
+          "C#",
+          "Linux"
+        ]
+      },
+      {
         "title": "Desarrollador de Juegos de Realidad Virtual",
-        "company": "Tecnologías del Conocimiento SAC",
+        "company": "Tecnologías del Conocimiento S.A.C. (TDCLA)",
         "years": "Abril 2023 - Noviembre 2023",
         "description": "Diseño y programación de experiencias inmersivas en entornos de realidad virtual. Integración de interacciones avanzadas con dispositivos VR y coordinación con equipos multidisciplinarios para el desarrollo de productos educativos y de simulación.",
         "stack": [
@@ -52,11 +63,10 @@
       {
         "title": "Desarrollador de Juegos 2D",
         "company": "Net Dreams - REGOB EIRL",
-        "years": "Enero 2021 - Enero 2022",
-        "description": "Creación de videojuegos casuales utilizando GameMaker y JavaScript. Trabajo conjunto con diseñadores y artistas para cumplir deadlines exigentes y asegurar la calidad técnica de los proyectos.",
+        "years": "Enero 2021 - Diciembre 2021",
+        "description": "Creación de videojuegos casuales utilizando Unity y C#. Trabajo conjunto con diseñadores y artistas para cumplir deadlines exigentes y asegurar la calidad técnica de los proyectos.",
         "stack": [
-          "GameMaker",
-          "JavaScript",
+          "Unity",
           "C#"
         ]
       }
