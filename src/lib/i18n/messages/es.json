@@ -17,14 +17,17 @@
     "title": "Experiencia Profesional",
     "jobs": [
       {
-        "title": "Operador de Software & Desarrollador Interno",
+        "title": "Desarrollador de Software",
         "company": "IRTP / TV Perú",
         "years": "Marzo 2021 - Presente",
-        "description": "Desarrollo de herramientas internas en C# para apoyar transmisiones en vivo. Encargado de operar software durante programas televisivos, garantizando la estabilidad técnica en entornos de alta presión.",
+        "description": "Desarrollador único y operador en vivo del software en tiempo real de dos programas concurso de TV nacional. Migré todo el sistema de Unity a un stack web moderno — Next.js en Vercel, Supabase para almacenamiento, base de datos y control de acceso, y Cloudflare — con versionado por despliegue y rollback instantáneo, hoy al aire. Construí un editor online para reposicionar imágenes, video y fondos en vivo, y un sistema de votación en vivo por QR con protecciones anti-abuso.",
         "stack": [
+          "Next.js",
+          "TypeScript",
+          "Supabase",
+          "Vercel",
           "C#",
-          ".NET",
-          "Broadcast Tools"
+          "Real-time"
         ]
       },
       {
@@ -64,7 +67,7 @@
         "title": "Desarrollador de Juegos 2D",
         "company": "Net Dreams - REGOB EIRL",
         "years": "Enero 2021 - Diciembre 2021",
-        "description": "Creación de videojuegos casuales utilizando Unity y C#. Trabajo conjunto con diseñadores y artistas para cumplir deadlines exigentes y asegurar la calidad técnica de los proyectos.",
+        "description": "Desarrollé dos juegos completos de principio a fin como único programador en Unity/C#, más un sistema de analíticas de jugador con GameAnalytics para medir la progresión y el comportamiento del jugador.",
         "stack": [
           "Unity",
           "C#"
@@ -80,10 +83,11 @@
         "title": "Que Gane el Mejor",
         "description": "Sistema de competencia educativa para estudiantes de secundaria, transmitido nacionalmente por TV Perú. Gestión de 28 colegios y más de 600 participantes.",
         "techStack": [
-          "C#",
-          ".NET",
-          "Real-time Systems",
-          "Broadcast Software"
+          "Next.js",
+          "TypeScript",
+          "Supabase",
+          "Vercel",
+          "Real-time"
         ],
         "link": "/tv-peru/que-gane-el-mejor",
         "year": "2021 - Presente"

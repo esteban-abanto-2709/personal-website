@@ -15,8 +15,8 @@ Resumen en ≤2 líneas de lo que se hizo.
 ## [RM-001] Reposicionamiento del sitio: de game dev a full-stack (2026-08-26 22:13)
 Volcado el sitio a full-stack/web en 5 commits: PDFs públicos, datos de experiencia (+GDP Studios), stack sin barras de %, hero, proyectos web, metadata y páginas tv-peru reencuadradas como sistema web. Build verde en cada bloque.
 
-## [RM-004] Sitio y PDFs sincronizados con la fuente de verdad (2026-08-26 22:13)
-Sitio (i18n messages) y PDFs de `public/` alineados con el CV. La fuente de verdad de los hechos pasó a `historial.md` → CV → sitio/PDFs/LinkedIn (documentado en CLAUDE.md). La alineación de LinkedIn queda del lado del usuario.
+## [RM-004] Sincronización del sitio con la fuente de verdad + salida del CV del repo (2026-08-26 22:36)
+Sitio (i18n) y PDFs de `public/` alineados con el CV, **incluida la entrada de IRTP reencuadrada como sistema web** (título, descripción y stack) y las tarjetas de proyecto. El CV (`cv/*.md`, `dist/`) y los docs de investigación se mudaron a `PersonalDevelopment/profesional/cv/`; este repo queda solo con la web. Fuente de verdad de los hechos: `profesional/trayectoria.md` → CV → sitio/PDFs/LinkedIn (README y CLAUDE.md actualizados). Alineación de LinkedIn: del lado del usuario.
 
 ## [TD-002] Dependencia next-intl instalada pero sin uso (2026-08-26 22:10)
 Eliminada con `npm uninstall next-intl`; el i18n propio queda como único mecanismo. Build verde.

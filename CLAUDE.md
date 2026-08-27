@@ -20,40 +20,20 @@ desplegado en Vercel. Landing de una sola página + páginas de caso de estudio 
   del sistema i18n. Es deuda conocida; ver `docs/logbook/technical-debt.md`.
 - Tailwind v4: usar utilidades modernas (`bg-linear-to-br`, etc.), no config de v3.
 
-## CV (`cv/`)
+## CV / PDFs de descarga
 
-Fuente en Markdown por idioma → DOCX (Pandoc) → PDF (Word). Requiere **Pandoc** y
-**MS Word** instalados (Windows).
+Los PDFs `public/CV_Esteban_Abanto_ES.pdf` y `_EN.pdf` (que sirve el botón "Descargar
+CV" en `Hero.tsx`) son **artefactos generados**. Su fuente en Markdown y el pipeline de
+generación (Pandoc → DOCX → PDF con Word) viven **fuera de este repo**, en
+`Projects-GitHub/PersonalDevelopment/profesional/cv/`.
 
-> **Fuente de verdad, en dos niveles:**
->
-> Los **hechos** (experiencia, fechas, títulos, qué documento prueba cada cosa) viven
-> fuera de este repo, en `Projects-GitHub/PersonalDevelopment/profesional/trayectoria/historial.md`.
-> Ahí está el historial completo, incluido lo que no entra en un CV.
->
-> `cv/cv.en.md` y `cv/cv.es.md` son el **recorte ATS-safe** de ese historial y la
-> referencia canónica de lo que **se envía**. El contenido del sitio
-> (`src/lib/i18n/messages/*.json`), los PDFs de `public/` y LinkedIn **derivan del CV**:
-> si el CV cambia, se propaga a los demás. Ver `docs/logbook/roadmap.md` (RM-004).
->
-> Dirección del flujo: `historial.md` → `cv.*.md` → sitio · PDFs · LinkedIn. Nunca al
-> revés. Un dato nuevo de un trabajo entra primero al historial.
+Para refrescarlos: regenerar los PDF allá y copiar cada uno a `public/` **conservando los
+nombres** (`CV_Esteban_Abanto_ES.pdf`, `_EN.pdf`) para no romper el link.
 
-```powershell
-# DOCX
-pandoc cv/cv.en.md -o cv/dist/cv.en.docx
-pandoc cv/cv.es.md -o cv/dist/cv.es.docx
-# DOCX -> PDF con Word COM
-$w = New-Object -ComObject Word.Application
-foreach ($l in @("en","es")) {
-  $d = $w.Documents.Open("$PWD\cv\dist\cv.$l.docx")
-  $d.SaveAs([ref]"$PWD\cv\dist\cv.$l.pdf",[ref]17); $d.Close($false)
-}
-$w.Quit()
-```
-
-Criterio del CV: estructura **ATS-safe** (una columna, headings estándar, sin tablas ni
-imágenes). Fundamentos en `docs/cv-research.md`.
+> **Fuente de verdad de los hechos:** `PersonalDevelopment/profesional/trayectoria.md`
+> (contrastado con certificados) → se recorta al CV (`profesional/cv/cv.*.md`, fuera de
+> este repo) → derivan el contenido del sitio (`src/lib/i18n/messages/*.json`), los PDFs
+> de `public/` y LinkedIn. Nunca al revés.
 
 ## Comandos
 

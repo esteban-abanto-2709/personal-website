@@ -17,14 +17,17 @@
     "title": "Professional Experience",
     "jobs": [
       {
-        "title": "Software Operator & Internal Developer",
+        "title": "Software Developer",
         "company": "IRTP / TV Perú",
         "years": "March 2021 - Present",
-        "description": "Development of internal tools in C# to support live broadcasts. Responsible for operating software during TV programs, ensuring technical stability in high-pressure environments.",
+        "description": "Sole developer and live operator of the real-time software behind two national TV competition shows. Migrated the entire system from Unity to a modern web stack — Next.js on Vercel, Supabase for storage, database and access control, and Cloudflare — with deploy-based versioning and instant rollback, now live on air. Built an online editor to reposition images, video and backgrounds live, and a QR-based live voting system with anti-abuse protections.",
         "stack": [
+          "Next.js",
+          "TypeScript",
+          "Supabase",
+          "Vercel",
           "C#",
-          ".NET",
-          "Broadcast Tools"
+          "Real-time"
         ]
       },
       {
@@ -64,7 +67,7 @@
         "title": "2D Game Developer",
         "company": "Net Dreams - REGOB EIRL",
         "years": "January 2021 - December 2021",
-        "description": "Creation of casual video games using Unity and C#. Worked closely with designers and artists to meet demanding deadlines and ensure technical quality of projects.",
+        "description": "Developed two complete games end-to-end as the sole programmer in Unity/C#, plus a player-analytics system with GameAnalytics to measure player progression and behavior.",
         "stack": [
           "Unity",
           "C#"
@@ -80,10 +83,11 @@
         "title": "Que Gane el Mejor",
         "description": "Educational competition system for high school students, broadcast nationally on TV Perú. Management of 28 schools and over 600 participants.",
         "techStack": [
-          "C#",
-          ".NET",
-          "Real-time Systems",
-          "Broadcast Software"
+          "Next.js",
+          "TypeScript",
+          "Supabase",
+          "Vercel",
+          "Real-time"
         ],
         "link": "/tv-peru/que-gane-el-mejor",
         "year": "2021 - Present"

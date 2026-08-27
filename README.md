@@ -35,10 +35,7 @@ src/
 │   └── index.ts         # detección de idioma, storage
 └── ui/                  # Botones/íconos reutilizables
 
-cv/                      # CV en Markdown → DOCX/PDF (ver cv/, sección abajo)
-docs/
-├── cv-research.md       # investigación de estructura de CV ATS-friendly
-└── logbook/             # roadmap, deuda técnica, changelog del proyecto
+docs/logbook/            # roadmap, deuda técnica, changelog del proyecto
 public/                  # avatar, CVs en PDF que sirve el botón "Descargar CV"
 ```
 
@@ -53,21 +50,8 @@ stack, se editan esos archivos — **ambos idiomas deben mantenerse en sincroní
 
 ## CV
 
-El CV se escribe una vez en Markdown y se genera a DOCX (ATS-safe) y PDF:
-
-```
-cv/
-├── cv.en.md · cv.es.md   # fuentes (una por idioma)
-└── dist/                 # salidas .docx y .pdf
-```
-
-Regenerar (requiere **Pandoc** y **MS Word** en Windows):
-
-```bash
-pandoc cv/cv.en.md -o cv/dist/cv.en.docx
-pandoc cv/cv.es.md -o cv/dist/cv.es.docx
-# DOCX → PDF vía Word (ver comando en CLAUDE.md)
-```
+Los PDF de `public/` que descarga el botón "Descargar CV" son **artefactos generados**.
+Su fuente y el pipeline de generación viven fuera de este repo (ver `CLAUDE.md`).
 
 ## Deploy
 
