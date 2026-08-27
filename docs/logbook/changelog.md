@@ -15,6 +15,9 @@ Resumen en ≤2 líneas de lo que se hizo.
 ## [RM-001] Reposicionamiento del sitio: de game dev a full-stack (2026-08-26 22:13)
 Volcado el sitio a full-stack/web en 5 commits: PDFs públicos, datos de experiencia (+GDP Studios), stack sin barras de %, hero, proyectos web, metadata y páginas tv-peru reencuadradas como sistema web. Build verde en cada bloque.
 
+## [TD-004] Nombre de TDCLA reconciliado — sin cambios en el sitio (2026-08-26 22:47)
+El cerebro confirmó, con la constancia firmada, que la razón social es "Tecnologías del Conocimiento S.A.C." ("Latinoamérica" no figura en el documento). El sitio ya usaba "S.A.C. (TDCLA)" (correcto); el error estaba en el CV y se corrigió allá. Sin cambios en este repo.
+
 ## [TD-001] Páginas de TV Perú movidas al sistema i18n (2026-08-26 22:45)
 El contenido de las dos páginas `tv-peru/*` (antes hardcodeado en español) se movió a la sección `tvPeru` de `messages/es.json` + `en.json`, con traducción al inglés. Las rutas ahora renderizan un componente compartido `TvPeruCaseStudy` que lee de i18n. Build verde.
 

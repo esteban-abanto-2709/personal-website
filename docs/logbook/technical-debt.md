@@ -13,10 +13,4 @@ changelog y se borra de aquí.
 
 ---
 
-## [TD-004] [Para el cerebro] Nombre de TDCLA desincronizado entre CV/PDF y sitio
-- **Ubicación:** `cv/cv.es.md` y `cv/cv.en.md` (línea de TDCLA)
-- **Riesgo:** 3/10
-- **Problema:** El CV (y los PDF ya publicados en `public/`) dicen "Tecnologías del Conocimiento Latinoamérica". El brief de reposicionamiento, contrastado con la constancia, indica razón social "Tecnologías del Conocimiento S.A.C."; el sitio usa "Tecnologías del Conocimiento S.A.C. (TDCLA)". El CV quedó desincronizado.
-- **Impacto futuro:** El PDF público muestra un nombre distinto al del sitio y al del certificado → inconsistencia en una verificación de referencias.
-- **Nota (pregunta para el cerebro):** Dominio del CV / `historial.md`; las manos no editan el CV. Si se actualizan los `.md`, regenerar el Bloque 1 (PDFs).
-- **Fecha:** 2026-08-26 · **Estado:** Abierto
+_Sin deuda abierta por ahora._
