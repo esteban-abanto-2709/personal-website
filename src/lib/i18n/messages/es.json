@@ -160,6 +160,84 @@
     },
     "note": "Experiencia adicional en desarrollo de videojuegos con Unity y C# (game dev)."
   },
+  "tvPeru": {
+    "back": "Volver a Proyectos",
+    "sections": {
+      "about": "Sobre el Programa",
+      "system": "El Sistema en Vivo",
+      "role": "Mi Rol y Contribución Técnica",
+      "stack": "Stack Técnico",
+      "impact": "Impacto y Alcance"
+    },
+    "queGane": {
+      "badge": "Sistema en producción · TV nacional",
+      "title": "Que Gane el Mejor",
+      "subtitle": "Software en tiempo real que opera un concurso escolar en vivo por TV Perú, migrado de Unity a un stack web moderno.",
+      "stats": [
+        { "value": "600+", "label": "Estudiantes" },
+        { "value": "28", "label": "Colegios" },
+        { "value": "En vivo", "label": "Cero fallos al aire" },
+        { "value": "Next.js", "label": "Stack actual" }
+      ],
+      "about": [
+        "“Que Gane el Mejor” es un programa concurso de TV Perú que enfrenta a dos colegios por episodio, con equipos de siete estudiantes de quinto de secundaria compitiendo en juegos de conocimiento.",
+        "Sale al aire en vivo, con juegos como “Personajes” y “Mi libro favorito”, y grandes finales que reúnen a cientos de estudiantes de colegios de distintas regiones del país."
+      ],
+      "system": [
+        { "label": "Tiempo real:", "text": "gestiona en vivo los juegos en pantalla, los puntajes y el flujo del programa" },
+        { "label": "Operado desde el switcher:", "text": "yo mismo lo opero durante la transmisión" },
+        { "label": "Sin caídas:", "text": "cualquier fallo debe recuperarse en segundos, en pleno directo" },
+        { "label": "Desarrollador único:", "text": "lo construyo y mantengo yo solo" }
+      ],
+      "role": [
+        { "title": "Migración de Unity a la web", "body": "Migré todo el sistema de una aplicación Unity a un stack web moderno: Next.js desplegado en Vercel, Supabase para almacenamiento, base de datos y control de acceso, y Cloudflare. Hoy está al aire. Aproveché el versionado por despliegue de Vercel para tener rollback instantáneo: si una versión falla, vuelvo a la anterior sin sacar el programa del aire." },
+        { "title": "Editor en vivo y arquitectura load-first", "body": "Construí un editor online que permite reposicionar imágenes, video y fondos en directo — algo imposible con el compilado de Unity anterior. Todo sobre una arquitectura load-first, con manejo cuidadoso de la RAM para garantizar renderizado sin interrupciones durante el programa en vivo." },
+        { "title": "Pipeline de datos y operación diaria", "body": "La producción sube los datos del día a la nube y el sistema los descarga para operar el programa. Un esquema de datos “en vivo” y “de ejemplo” permite que los conductores revisen la información desde tablets y que la producción corrija datos al instante desde detrás de cámaras." },
+        { "title": "Votación del público en vivo", "body": "Desarrollé un sistema de votación por QR para que los televidentes apoyen a un colegio, con protecciones anti-abuso apoyadas en Cloudflare Tunnel para evitar votos múltiples y ataques." }
+      ],
+      "tech": ["Next.js", "TypeScript", "Vercel", "Supabase", "Cloudflare", "Real-time", "C# / Unity (legacy)"],
+      "impact": [
+        { "title": "En producción, al aire", "desc": "Sistema operando en vivo en televisión nacional durante múltiples temporadas, sin caídas al aire." },
+        { "title": "Migración a web sin sacar el programa del aire", "desc": "El sistema pasó de Unity a Next.js / Vercel / Supabase con el programa al aire, usando el rollback instantáneo como red de seguridad." },
+        { "title": "Alcance nacional", "desc": "Más de 600 estudiantes de 28 colegios de distintas regiones del Perú." },
+        { "title": "Desarrollador único", "desc": "Diseño, desarrollo y operación en vivo a cargo de una sola persona." }
+      ]
+    },
+    "pukllaspa": {
+      "badge": "Sistema en tiempo real · TV nacional",
+      "title": "Pukllaspa Yachay",
+      "subtitle": "El origen del sistema en vivo que operé para TV Perú: un concurso diario en quechua, construido y operado en tiempo real.",
+      "stats": [
+        { "value": "2021", "label": "Estreno" },
+        { "value": "~2.5 años", "label": "Al aire" },
+        { "value": "Diario", "label": "En vivo, 18:00" },
+        { "value": "20+", "label": "Juegos en pantalla" }
+      ],
+      "about": [
+        "Pukllaspa Yachay (“Aprende Jugando”) fue un programa concurso de TV Perú para promover el aprendizaje del quechua, con una competencia diaria entre tres participantes.",
+        "Se transmitió en vivo en horario estelar durante alrededor de dos años y medio. Fue el primer programa para el que desarrollé el sistema, y el punto de partida de todo lo que vino después."
+      ],
+      "system": [
+        { "label": "Tiempo real:", "text": "control del flujo del programa, rondas y puntajes en directo" },
+        { "label": "Datos diarios:", "text": "cada emisión requería nuevas preguntas, imágenes y estructuras por juego" },
+        { "label": "Tolerante a fallos:", "text": "versionado con vuelta atrás para recuperarse en segundos en pleno directo" },
+        { "label": "Desarrollador único:", "text": "construido y operado por mí" }
+      ],
+      "role": [
+        { "title": "Sistema de competencia en tiempo real", "body": "Desarrollé en Unity/C# el software que controla el programa en vivo: gestión de participantes, rondas, y más de 20 juegos interactivos en pantalla, cada uno con su propio sistema de puntuación, operado por mí durante la transmisión." },
+        { "title": "Colector de datos diario", "body": "Como el programa salía a diario, construí un sistema aparte para cargar los datos de cada emisión — preguntas, imágenes y estructuras distintas por juego — de forma que la producción pudiera preparar el contenido del día sin tocar el software de juegos." },
+        { "title": "Confiabilidad en directo", "body": "Implementé un esquema de versionado con vuelta atrás: el sistema trabajaba con la última versión, pero podía caer a una anterior si algo fallaba. En un programa en vivo cualquier error tenía que resolverse en segundos, y el sistema operó temporadas completas sin caídas al aire." },
+        { "title": "Integración con producción", "body": "El software se integraba con la producción de TV Perú para controlar los gráficos en pantalla, los puntajes y las transiciones entre segmentos del programa." }
+      ],
+      "tech": ["Unity", "C#", ".NET", "Real-time", "Broadcast Software"],
+      "impact": [
+        { "title": "Transmisión nacional en vivo", "desc": "Programa emitido en horario estelar por TV Perú durante alrededor de dos años y medio." },
+        { "title": "Operación sin fallos", "desc": "El sistema operó temporadas completas en directo, con recuperación en segundos ante cualquier incidencia." },
+        { "title": "Base de todo lo que siguió", "desc": "El sistema que construí aquí fue el punto de partida del que hoy opera “Que Gane el Mejor”, ya migrado a web." },
+        { "title": "Preservación cultural", "desc": "Aporte a la promoción y enseñanza del idioma quechua en el Perú." }
+      ]
+    }
+  },
   "contact": {
     "title": "¿Listo para colaborar?",
     "description": "Siempre estoy abierto a discutir nuevos proyectos y oportunidades."

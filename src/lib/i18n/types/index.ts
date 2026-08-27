@@ -16,6 +16,18 @@ export interface Project {
   year: string;
 }
 
+export interface TvPeruPage {
+  badge: string;
+  title: string;
+  subtitle: string;
+  stats: { value: string; label: string }[];
+  about: string[];
+  system: { label: string; text: string }[];
+  role: { title: string; body: string }[];
+  tech: string[];
+  impact: { title: string; desc: string }[];
+}
+
 export interface Messages {
   navigation: {
     title: string;
@@ -58,6 +70,12 @@ export interface Messages {
       devops: string[];
     };
     note: string;
+  };
+  tvPeru: {
+    back: string;
+    sections: { about: string; system: string; role: string; stack: string; impact: string };
+    queGane: TvPeruPage;
+    pukllaspa: TvPeruPage;
   };
   contact: {
     title: string;

@@ -13,13 +13,6 @@ changelog y se borra de aquí.
 
 ---
 
-## [TD-001] Páginas de TV Perú hardcodeadas en español, fuera de i18n
-- **Ubicación:** `src/app/tv-peru/que-gane-el-mejor/page.tsx`, `src/app/tv-peru/pukllaspa-yachay/page.tsx`
-- **Riesgo:** 5/10
-- **Problema:** Todo el texto de estas dos páginas de caso de estudio está escrito directo en JSX en español, sin pasar por el sistema i18n (`messages/es.json` · `en.json`) que usa el resto del sitio.
-- **Impacto futuro:** Un visitante en inglés ve el sitio en inglés pero estas subpáginas en español. Al actualizar contenido hay que tocar JSX en dos idiomas a mano; fácil que queden desincronizadas con el CV.
-- **Fecha:** 2026-07-31 · **Estado:** Abierto
-
 ## [TD-004] [Para el cerebro] Nombre de TDCLA desincronizado entre CV/PDF y sitio
 - **Ubicación:** `cv/cv.es.md` y `cv/cv.en.md` (línea de TDCLA)
 - **Riesgo:** 3/10

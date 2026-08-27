@@ -160,6 +160,84 @@
     },
     "note": "Additional experience in game development with Unity and C#."
   },
+  "tvPeru": {
+    "back": "Back to Projects",
+    "sections": {
+      "about": "About the Program",
+      "system": "The Live System",
+      "role": "My Role & Technical Contribution",
+      "stack": "Tech Stack",
+      "impact": "Impact & Reach"
+    },
+    "queGane": {
+      "badge": "System in production · National TV",
+      "title": "Que Gane el Mejor",
+      "subtitle": "Real-time software that runs a live school competition show on TV Perú, migrated from Unity to a modern web stack.",
+      "stats": [
+        { "value": "600+", "label": "Students" },
+        { "value": "28", "label": "Schools" },
+        { "value": "Live", "label": "Zero on-air failures" },
+        { "value": "Next.js", "label": "Current stack" }
+      ],
+      "about": [
+        "“Que Gane el Mejor” is a TV Perú competition show that pits two schools against each other per episode, with teams of seven high-school seniors competing in knowledge games.",
+        "It airs live, with games like “Personajes” and “Mi libro favorito”, and grand finals bringing together hundreds of students from schools across the country."
+      ],
+      "system": [
+        { "label": "Real-time:", "text": "manages the on-screen games, scores and show flow live" },
+        { "label": "Operated from the switcher:", "text": "I operate it myself during the broadcast" },
+        { "label": "No downtime:", "text": "any failure must be recovered within seconds, live on air" },
+        { "label": "Sole developer:", "text": "I build and maintain it on my own" }
+      ],
+      "role": [
+        { "title": "Migration from Unity to the web", "body": "I migrated the entire system from a Unity application to a modern web stack: Next.js deployed on Vercel, Supabase for storage, database and access control, and Cloudflare. It is live on air today. I use Vercel's deploy-based versioning for instant rollback: if a version fails, I revert to the previous one without taking the show off the air." },
+        { "title": "Live editor and load-first architecture", "body": "I built an online editor to reposition images, video and backgrounds live — impossible with the previous Unity build. All on a load-first architecture, with careful RAM management to guarantee interruption-free rendering during the live show." },
+        { "title": "Data pipeline and daily operation", "body": "Production uploads the day's data to the cloud and the system downloads it to run the show. A “live” and “sample” data scheme lets hosts review the information from tablets and lets production fix data instantly from behind the cameras." },
+        { "title": "Live audience voting", "body": "I developed a QR-based voting system for viewers to back a school, with anti-abuse protections backed by Cloudflare Tunnel to prevent multiple votes and attacks." }
+      ],
+      "tech": ["Next.js", "TypeScript", "Vercel", "Supabase", "Cloudflare", "Real-time", "C# / Unity (legacy)"],
+      "impact": [
+        { "title": "In production, on air", "desc": "System running live on national television across multiple seasons, with zero on-air failures." },
+        { "title": "Migrated to web without taking the show off air", "desc": "The system moved from Unity to Next.js / Vercel / Supabase while the show was on air, using instant rollback as a safety net." },
+        { "title": "National reach", "desc": "Over 600 students from 28 schools across different regions of Peru." },
+        { "title": "Sole developer", "desc": "Design, development and live operation by a single person." }
+      ]
+    },
+    "pukllaspa": {
+      "badge": "Real-time system · National TV",
+      "title": "Pukllaspa Yachay",
+      "subtitle": "The origin of the live system I operated for TV Perú: a daily quiz show in Quechua, built and operated in real time.",
+      "stats": [
+        { "value": "2021", "label": "Premiere" },
+        { "value": "~2.5 years", "label": "On air" },
+        { "value": "Daily", "label": "Live, 6:00 PM" },
+        { "value": "20+", "label": "On-screen games" }
+      ],
+      "about": [
+        "Pukllaspa Yachay (“Learning by Playing”) was a TV Perú competition show to promote learning the Quechua language, with a daily contest between three participants.",
+        "It aired live in prime time for about two and a half years. It was the first program I built the system for, and the starting point of everything that came after."
+      ],
+      "system": [
+        { "label": "Real-time:", "text": "control of the show flow, rounds and scores live" },
+        { "label": "Daily data:", "text": "each broadcast required new questions, images and per-game structures" },
+        { "label": "Fault-tolerant:", "text": "rollback-based versioning to recover within seconds live on air" },
+        { "label": "Sole developer:", "text": "built and operated by me" }
+      ],
+      "role": [
+        { "title": "Real-time competition system", "body": "I developed in Unity/C# the software that controls the live show: participant management, rounds, and 20+ interactive on-screen games, each with its own scoring system, operated by me during the broadcast." },
+        { "title": "Daily data collector", "body": "Since the show aired daily, I built a separate system to load each broadcast's data — questions, images and different structures per game — so production could prepare the day's content without touching the game software." },
+        { "title": "Live reliability", "body": "I implemented a rollback-based versioning scheme: the system ran the latest version but could fall back to a previous one if something failed. On a live show any error had to be resolved within seconds, and the system ran full seasons with zero on-air failures." },
+        { "title": "Integration with production", "body": "The software integrated with TV Perú's production to control on-screen graphics, scores and transitions between show segments." }
+      ],
+      "tech": ["Unity", "C#", ".NET", "Real-time", "Broadcast Software"],
+      "impact": [
+        { "title": "Live national broadcast", "desc": "Program aired in prime time on TV Perú for about two and a half years." },
+        { "title": "Failure-free operation", "desc": "The system ran full seasons live, recovering within seconds from any incident." },
+        { "title": "Foundation for what followed", "desc": "The system I built here was the starting point of the one that now runs “Que Gane el Mejor”, already migrated to web." },
+        { "title": "Cultural preservation", "desc": "A contribution to promoting and teaching the Quechua language in Peru." }
+      ]
+    }
+  },
   "contact": {
     "title": "Ready to collaborate?",
     "description": "I'm always open to discussing new projects and opportunities."

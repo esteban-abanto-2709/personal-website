@@ -16,8 +16,8 @@ desplegado en Vercel. Landing de una sola página + páginas de caso de estudio 
   dos archivos, y **ambos idiomas se mantienen en sincronía**.
 - **i18n es propio**, no `next-intl` (está en `package.json` pero sin usar → deuda).
   El patrón es `useTranslations("seccion")` + `useMessages()` sobre el `LocaleProvider`.
-- Las páginas `src/app/tv-peru/*` tienen el texto hardcodeado en JSX (solo ES) — fuera
-  del sistema i18n. Es deuda conocida; ver `docs/logbook/technical-debt.md`.
+- Las páginas `src/app/tv-peru/*` renderizan `<TvPeruCaseStudy which="…" />`, que lee su
+  contenido de la sección `tvPeru` de los messages (es/en) — igual que el resto del sitio.
 - Tailwind v4: usar utilidades modernas (`bg-linear-to-br`, etc.), no config de v3.
 
 ## CV / PDFs de descarga

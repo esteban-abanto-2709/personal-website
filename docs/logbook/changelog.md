@@ -15,6 +15,9 @@ Resumen en ≤2 líneas de lo que se hizo.
 ## [RM-001] Reposicionamiento del sitio: de game dev a full-stack (2026-08-26 22:13)
 Volcado el sitio a full-stack/web en 5 commits: PDFs públicos, datos de experiencia (+GDP Studios), stack sin barras de %, hero, proyectos web, metadata y páginas tv-peru reencuadradas como sistema web. Build verde en cada bloque.
 
+## [TD-001] Páginas de TV Perú movidas al sistema i18n (2026-08-26 22:45)
+El contenido de las dos páginas `tv-peru/*` (antes hardcodeado en español) se movió a la sección `tvPeru` de `messages/es.json` + `en.json`, con traducción al inglés. Las rutas ahora renderizan un componente compartido `TvPeruCaseStudy` que lee de i18n. Build verde.
+
 ## [RM-004] Sincronización del sitio con la fuente de verdad + salida del CV del repo (2026-08-26 22:36)
 Sitio (i18n) y PDFs de `public/` alineados con el CV, **incluida la entrada de IRTP reencuadrada como sistema web** (título, descripción y stack) y las tarjetas de proyecto. El CV (`cv/*.md`, `dist/`) y los docs de investigación se mudaron a `PersonalDevelopment/profesional/cv/`; este repo queda solo con la web. Fuente de verdad de los hechos: `profesional/trayectoria.md` → CV → sitio/PDFs/LinkedIn (README y CLAUDE.md actualizados). Alineación de LinkedIn: del lado del usuario.
 
