@@ -36,9 +36,6 @@ yarn-error.log*
 # vercel
 .vercel
 
-# job search (privado, nunca se versiona)
-/job-search/
-
 # typescript
 *.tsbuildinfo
 next-env.d.ts
