@@ -16,7 +16,7 @@ export default function Experience() {
 
         <div className="space-y-8">
           {jobs.map((job) => (
-            <ExperienceItem key={job.title} {...job} />
+            <ExperienceItem key={job.company} {...job} />
           ))}
         </div>
       </div>
