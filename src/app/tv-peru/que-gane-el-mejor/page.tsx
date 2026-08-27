@@ -1,7 +1,7 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
-import { ArrowLeft, Tv, Users, Trophy, Code, Award } from "lucide-react";
+import { ArrowLeft, Tv, Users, Server, Code, Check } from "lucide-react";
 import Link from "next/link";
 
 export default function QueGaneElMejorPage() {
@@ -27,13 +27,13 @@ export default function QueGaneElMejorPage() {
               </div>
               <div>
                 <span className="inline-block px-3 py-1 bg-emerald-500/20 text-emerald-300 rounded-full text-sm font-medium border border-emerald-500/30 mb-3">
-                  📺 TV Nacional
+                  Sistema en producción · TV nacional
                 </span>
                 <h1 className="text-4xl md:text-5xl font-bold text-white mb-2">
                   Que Gane el Mejor
                 </h1>
                 <p className="text-xl text-gray-400">
-                  Programa concurso de conocimiento para estudiantes de secundaria
+                  Software en tiempo real que opera un concurso escolar en vivo por TV Perú, migrado de Unity a un stack web moderno.
                 </p>
               </div>
             </div>
@@ -48,12 +48,12 @@ export default function QueGaneElMejorPage() {
                 <div className="text-sm text-gray-400">Colegios</div>
               </div>
               <div className="text-center">
-                <div className="text-2xl font-bold text-emerald-400">6</div>
-                <div className="text-sm text-gray-400">Regiones</div>
+                <div className="text-2xl font-bold text-emerald-400">En vivo</div>
+                <div className="text-sm text-gray-400">Cero fallos al aire</div>
               </div>
               <div className="text-center">
-                <div className="text-2xl font-bold text-emerald-400">TV Perú</div>
-                <div className="text-sm text-gray-400">Canal</div>
+                <div className="text-2xl font-bold text-emerald-400">Next.js</div>
+                <div className="text-sm text-gray-400">Stack actual</div>
               </div>
             </div>
           </div>
@@ -65,41 +65,34 @@ export default function QueGaneElMejorPage() {
                 Sobre el Programa
               </h2>
               <p className="text-gray-300 leading-relaxed mb-4">
-                “Que Gane el Mejor” es un programa concurso de TV Perú que reúne a estudiantes de quinto año de secundaria de diferentes colegios del país para demostrar sus conocimientos y habilidades en diversos desafíos educativos.
-              </p>
-              <p className="text-gray-300 leading-relaxed mb-4">
-                El programa se ha consolidado como un espacio donde los estudiantes peruanos demuestran su capacidad para competir con rigor, liderar con carácter y asumir desafíos con determinación.
+                “Que Gane el Mejor” es un programa concurso de TV Perú que enfrenta a dos colegios por episodio, con equipos de siete estudiantes de quinto de secundaria compitiendo en juegos de conocimiento.
               </p>
               <p className="text-gray-300 leading-relaxed">
-                Cada competencia reúne a equipos de siete estudiantes que participan en juegos de conocimiento y destreza, como “Personajes”, “Mi libro favorito” y “Personajes”, en un ambiente de compañerismo y sana competencia.
+                Sale al aire en vivo, con juegos como “Personajes” y “Mi libro favorito”, y grandes finales que reúnen a cientos de estudiantes de colegios de distintas regiones del país.
               </p>
             </div>
 
             <div className="glass-card p-8 rounded-2xl border border-white/10">
               <h2 className="text-2xl font-bold text-white mb-4 flex items-center gap-2">
-                <Trophy className="w-6 h-6 text-emerald-400" />
-                Formato de Competencia
+                <Server className="w-6 h-6 text-emerald-400" />
+                El Sistema en Vivo
               </h2>
               <ul className="space-y-3 text-gray-300">
                 <li className="flex items-start gap-2">
                   <span className="text-emerald-400 mt-1">•</span>
-                  <span><strong className="text-white">Equipos:</strong> 7 estudiantes de 5to de secundaria por colegio</span>
+                  <span><strong className="text-white">Tiempo real:</strong> gestiona en vivo los juegos en pantalla, los puntajes y el flujo del programa</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-emerald-400 mt-1">•</span>
-                  <span><strong className="text-white">Alcance nacional:</strong> Colegios de Áncash, Tumbes, Ica, Huánuco, Junín y Lima</span>
+                  <span><strong className="text-white">Operado desde el switcher:</strong> yo mismo lo opero durante la transmisión</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-emerald-400 mt-1">•</span>
-                  <span><strong className="text-white">Rondas de juego:</strong> Desafíos de conocimiento general, literatura, y destreza física y mental</span>
+                  <span><strong className="text-white">Sin caídas:</strong> cualquier fallo debe recuperarse en segundos, en pleno directo</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-emerald-400 mt-1">•</span>
-                  <span><strong className="text-white">Gran final:</strong> Transmisión especial de 2 horas con más de 600 estudiantes presentes</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-emerald-400 mt-1">•</span>
-                  <span><strong className="text-white">Premios:</strong> Laptops, becas integrales y reconocimientos académicos</span>
+                  <span><strong className="text-white">Desarrollador único:</strong> lo construyo y mantengo yo solo</span>
                 </li>
               </ul>
             </div>
@@ -113,30 +106,30 @@ export default function QueGaneElMejorPage() {
 
             <div className="space-y-6">
               <div>
-                <h3 className="text-lg font-semibold text-white mb-3">Sistema de Gestión de Competencias</h3>
+                <h3 className="text-lg font-semibold text-white mb-3">Migración de Unity a la web</h3>
                 <p className="text-gray-300 leading-relaxed">
-                  Desarrollé el software que gestiona toda la lógica del programa en tiempo real, permitiendo controlar el flujo de la competencia, el registro de puntajes, y la visualización de resultados en pantalla durante la transmisión en vivo.
+                  Migré todo el sistema de una aplicación Unity a un stack web moderno: Next.js desplegado en Vercel, Supabase para almacenamiento, base de datos y control de acceso, y Cloudflare. Hoy está al aire. Aproveché el versionado por despliegue de Vercel para tener rollback instantáneo: si una versión falla, vuelvo a la anterior sin sacar el programa del aire.
                 </p>
               </div>
 
               <div>
-                <h3 className="text-lg font-semibold text-white mb-3">Gestión de Equipos y Puntajes</h3>
+                <h3 className="text-lg font-semibold text-white mb-3">Editor en vivo y arquitectura load-first</h3>
                 <p className="text-gray-300 leading-relaxed">
-                  Implementé el sistema de registro y seguimiento de equipos participantes, con capacidad para gestionar hasta 28 colegios simultáneamente. El sistema calcula y actualiza los puntajes en tiempo real, permitiendo a los operadores mantener el control total durante las diferentes rondas de juego.
+                  Construí un editor online que permite reposicionar imágenes, video y fondos en directo — algo imposible con el compilado de Unity anterior. Todo sobre una arquitectura load-first, con manejo cuidadoso de la RAM para garantizar renderizado sin interrupciones durante el programa en vivo.
                 </p>
               </div>
 
               <div>
-                <h3 className="text-lg font-semibold text-white mb-3">Integración con Producción en Vivo</h3>
+                <h3 className="text-lg font-semibold text-white mb-3">Pipeline de datos y operación diaria</h3>
                 <p className="text-gray-300 leading-relaxed">
-                  El software se integra con el sistema de producción de TV Perú para controlar elementos visuales en pantalla, gráficos de puntajes, transiciones entre rondas, y la presentación de información de los equipos participantes. Diseñado para operar sin fallos durante transmisiones en vivo de hasta 2 horas.
+                  La producción sube los datos del día a la nube y el sistema los descarga para operar el programa. Un esquema de datos “en vivo” y “de ejemplo” permite que los conductores revisen la información desde tablets y que la producción corrija datos al instante desde detrás de cámaras.
                 </p>
               </div>
 
               <div>
-                <h3 className="text-lg font-semibold text-white mb-3">Múltiples Modalidades de Juego</h3>
+                <h3 className="text-lg font-semibold text-white mb-3">Votación del público en vivo</h3>
                 <p className="text-gray-300 leading-relaxed">
-                  Implementé la lógica para diferentes tipos de rondas: preguntas de conocimiento general, desafíos literarios, y actividades recreativas. Cada modalidad tiene su propio sistema de puntuación y reglas específicas que el software gestiona automáticamente.
+                  Desarrollé un sistema de votación por QR para que los televidentes apoyen a un colegio, con protecciones anti-abuso apoyadas en Cloudflare Tunnel para evitar votos múltiples y ataques.
                 </p>
               </div>
             </div>
@@ -144,80 +137,37 @@ export default function QueGaneElMejorPage() {
             <div className="mt-8 pt-8 border-t border-white/10">
               <h3 className="text-lg font-semibold text-white mb-4">Stack Técnico</h3>
               <div className="flex flex-wrap gap-2">
-                <span className="px-3 py-1 bg-emerald-500/20 text-emerald-300 rounded-full text-sm border border-emerald-500/30">
-                  C#
-                </span>
-                <span className="px-3 py-1 bg-emerald-500/20 text-emerald-300 rounded-full text-sm border border-emerald-500/30">
-                  .NET
-                </span>
-                <span className="px-3 py-1 bg-emerald-500/20 text-emerald-300 rounded-full text-sm border border-emerald-500/30">
-                  Real-time Systems
-                </span>
-                <span className="px-3 py-1 bg-emerald-500/20 text-emerald-300 rounded-full text-sm border border-emerald-500/30">
-                  Broadcast Software
-                </span>
-                <span className="px-3 py-1 bg-emerald-500/20 text-emerald-300 rounded-full text-sm border border-emerald-500/30">
-                  Live TV Integration
-                </span>
+                {["Next.js", "TypeScript", "Vercel", "Supabase", "Cloudflare", "Real-time", "C# / Unity (legacy)"].map((tech) => (
+                  <span key={tech} className="px-3 py-1 bg-emerald-500/20 text-emerald-300 rounded-full text-sm border border-emerald-500/30">
+                    {tech}
+                  </span>
+                ))}
               </div>
             </div>
           </div>
 
           <div className="glass-card p-8 rounded-2xl border border-white/10">
             <h2 className="text-2xl font-bold text-white mb-6 flex items-center gap-2">
-              <Award className="w-6 h-6 text-emerald-400" />
+              <Check className="w-6 h-6 text-emerald-400" />
               Impacto y Alcance
             </h2>
             <div className="space-y-4">
-              <div className="flex items-start gap-3">
-                <div className="w-8 h-8 bg-emerald-500/20 rounded-lg flex items-center justify-center shrink-0 mt-1">
-                  <span className="text-emerald-400 font-bold">✓</span>
+              {[
+                ["En producción, al aire", "Sistema operando en vivo en televisión nacional durante múltiples temporadas, sin caídas al aire."],
+                ["Migración a web sin sacar el programa del aire", "El sistema pasó de Unity a Next.js / Vercel / Supabase con el programa al aire, usando el rollback instantáneo como red de seguridad."],
+                ["Alcance nacional", "Más de 600 estudiantes de 28 colegios de distintas regiones del Perú."],
+                ["Desarrollador único", "Diseño, desarrollo y operación en vivo a cargo de una sola persona."],
+              ].map(([title, desc]) => (
+                <div key={title} className="flex items-start gap-3">
+                  <div className="w-8 h-8 bg-emerald-500/20 rounded-lg flex items-center justify-center shrink-0 mt-1">
+                    <Check className="w-4 h-4 text-emerald-400" />
+                  </div>
+                  <div>
+                    <p className="text-white font-medium">{title}</p>
+                    <p className="text-gray-400 text-sm">{desc}</p>
+                  </div>
                 </div>
-                <div>
-                  <p className="text-white font-medium">Alcance Nacional</p>
-                  <p className="text-gray-400 text-sm">Más de 600 estudiantes de 28 colegios de 6 regiones del Perú (Áncash, Tumbes, Ica, Huánuco, Junín y Lima)</p>
-                </div>
-              </div>
-
-              <div className="flex items-start gap-3">
-                <div className="w-8 h-8 bg-emerald-500/20 rounded-lg flex items-center justify-center shrink-0 mt-1">
-                  <span className="text-emerald-400 font-bold">✓</span>
-                </div>
-                <div>
-                  <p className="text-white font-medium">Transmisión en Vivo</p>
-                  <p className="text-gray-400 text-sm">Programa transmitido en directo por TV Perú, con finales especiales de hasta 2 horas de duración</p>
-                </div>
-              </div>
-
-              <div className="flex items-start gap-3">
-                <div className="w-8 h-8 bg-emerald-500/20 rounded-lg flex items-center justify-center shrink-0 mt-1">
-                  <span className="text-emerald-400 font-bold">✓</span>
-                </div>
-                <div>
-                  <p className="text-white font-medium">Impacto Educativo</p>
-                  <p className="text-gray-400 text-sm">Plataforma que promueve el mérito académico y brinda oportunidades educativas a través de becas y premios tecnológicos</p>
-                </div>
-              </div>
-
-              <div className="flex items-start gap-3">
-                <div className="w-8 h-8 bg-emerald-500/20 rounded-lg flex items-center justify-center shrink-0 mt-1">
-                  <span className="text-emerald-400 font-bold">✓</span>
-                </div>
-                <div>
-                  <p className="text-white font-medium">Operación Sin Fallos</p>
-                  <p className="text-gray-400 text-sm">Software operado exitosamente durante múltiples temporadas sin interrupciones técnicas en transmisiones en vivo</p>
-                </div>
-              </div>
-
-              <div className="flex items-start gap-3">
-                <div className="w-8 h-8 bg-emerald-500/20 rounded-lg flex items-center justify-center shrink-0 mt-1">
-                  <span className="text-emerald-400 font-bold">✓</span>
-                </div>
-                <div>
-                  <p className="text-white font-medium">Evento de Alto Perfil</p>
-                  <p className="text-gray-400 text-sm">Gran final realizada en el Salón de Los Incas del Ministerio de Cultura, respaldada por el IRTP</p>
-                </div>
-              </div>
+              ))}
             </div>
           </div>
 

@@ -27,13 +27,6 @@ changelog y se borra de aquí.
 - **Impacto futuro:** Peso muerto en el bundle/instalación y confusión sobre cuál es el mecanismo real de i18n. Decidir: adoptarla y borrar el custom, o quitarla.
 - **Fecha:** 2026-07-31 · **Estado:** Abierto
 
-## [TD-003] Juego repetido en la lista de "Que Gane el Mejor"
-- **Ubicación:** `src/app/tv-peru/que-gane-el-mejor/page.tsx:74`
-- **Riesgo:** 2/10
-- **Problema:** La frase lista los juegos como «"Personajes", "Mi libro favorito" y "Personajes"» — "Personajes" aparece dos veces; el tercero debería ser otro juego.
-- **Impacto futuro:** Error de contenido visible en una página pública de portafolio; da impresión de descuido a un reclutador.
-- **Fecha:** 2026-07-31 · **Estado:** Abierto
-
 ## [TD-004] [Para el cerebro] Nombre de TDCLA desincronizado entre CV/PDF y sitio
 - **Ubicación:** `cv/cv.es.md` y `cv/cv.en.md` (línea de TDCLA)
 - **Riesgo:** 3/10

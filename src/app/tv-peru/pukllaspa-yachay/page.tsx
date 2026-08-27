@@ -1,7 +1,7 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
-import { ArrowLeft, Tv, Users, Trophy, Code, Award } from "lucide-react";
+import { ArrowLeft, Tv, Users, Server, Code, Check } from "lucide-react";
 import Link from "next/link";
 
 export default function PukllaspaYachayPage() {
@@ -13,7 +13,7 @@ export default function PukllaspaYachayPage() {
         <div className="max-w-5xl mx-auto">
 
           <Link
-            href="/"
+            href="/#projects"
             className="inline-flex items-center gap-2 text-gray-400 hover:text-emerald-400 transition-colors mb-8"
           >
             <ArrowLeft className="w-4 h-4" />
@@ -27,13 +27,13 @@ export default function PukllaspaYachayPage() {
               </div>
               <div>
                 <span className="inline-block px-3 py-1 bg-emerald-500/20 text-emerald-300 rounded-full text-sm font-medium border border-emerald-500/30 mb-3">
-                  📺 TV Nacional
+                  Sistema en tiempo real · TV nacional
                 </span>
                 <h1 className="text-4xl md:text-5xl font-bold text-white mb-2">
                   Pukllaspa Yachay
                 </h1>
                 <p className="text-xl text-gray-400">
-                  “Aprende Jugando” - Programa concurso en quechua
+                  El origen del sistema en vivo que operé para TV Perú: un concurso diario en quechua, construido y operado en tiempo real.
                 </p>
               </div>
             </div>
@@ -44,16 +44,16 @@ export default function PukllaspaYachayPage() {
                 <div className="text-sm text-gray-400">Estreno</div>
               </div>
               <div className="text-center">
-                <div className="text-2xl font-bold text-emerald-400">18:00</div>
-                <div className="text-sm text-gray-400">Horario estelar</div>
+                <div className="text-2xl font-bold text-emerald-400">~2.5 años</div>
+                <div className="text-sm text-gray-400">Al aire</div>
               </div>
               <div className="text-center">
-                <div className="text-2xl font-bold text-emerald-400">3</div>
-                <div className="text-sm text-gray-400">Participantes/día</div>
+                <div className="text-2xl font-bold text-emerald-400">Diario</div>
+                <div className="text-sm text-gray-400">En vivo, 18:00</div>
               </div>
               <div className="text-center">
-                <div className="text-2xl font-bold text-emerald-400">TV Perú</div>
-                <div className="text-sm text-gray-400">Canal</div>
+                <div className="text-2xl font-bold text-emerald-400">20+</div>
+                <div className="text-sm text-gray-400">Juegos en pantalla</div>
               </div>
             </div>
           </div>
@@ -65,37 +65,34 @@ export default function PukllaspaYachayPage() {
                 Sobre el Programa
               </h2>
               <p className="text-gray-300 leading-relaxed mb-4">
-                Pukllaspa Yachay es un programa concurso de entretenimiento transmitido por TV Perú que busca promover el aprendizaje del idioma quechua de una manera divertida y dinámica.
-              </p>
-              <p className="text-gray-300 leading-relaxed mb-4">
-                Conducido por el actor Juan Carlos Rey de Castro y la periodista Iris Cárdenas, el programa presenta una competencia diaria entre tres participantes, quienes se enfrentan a diversos desafíos lingüísticos y culturales.
+                Pukllaspa Yachay (“Aprende Jugando”) fue un programa concurso de TV Perú para promover el aprendizaje del quechua, con una competencia diaria entre tres participantes.
               </p>
               <p className="text-gray-300 leading-relaxed">
-                El show cuenta con un personaje especial llamado “Yachaq” (el sabio), quien actúa como juez durante las competencias.
+                Se transmitió en vivo en horario estelar durante alrededor de dos años y medio. Fue el primer programa para el que desarrollé el sistema, y el punto de partida de todo lo que vino después.
               </p>
             </div>
 
             <div className="glass-card p-8 rounded-2xl border border-white/10">
               <h2 className="text-2xl font-bold text-white mb-4 flex items-center gap-2">
-                <Trophy className="w-6 h-6 text-emerald-400" />
-                Formato de Competencia
+                <Server className="w-6 h-6 text-emerald-400" />
+                El Sistema en Vivo
               </h2>
               <ul className="space-y-3 text-gray-300">
                 <li className="flex items-start gap-2">
                   <span className="text-emerald-400 mt-1">•</span>
-                  <span><strong className="text-white">Competencia diaria:</strong> 3 participantes nuevos cada día</span>
+                  <span><strong className="text-white">Tiempo real:</strong> control del flujo del programa, rondas y puntajes en directo</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-emerald-400 mt-1">•</span>
-                  <span><strong className="text-white">Ganador diario:</strong> Avanza a la competencia semanal</span>
+                  <span><strong className="text-white">Datos diarios:</strong> cada emisión requería nuevas preguntas, imágenes y estructuras por juego</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-emerald-400 mt-1">•</span>
-                  <span><strong className="text-white">Semifinales:</strong> Los campeones semanales compiten entre sí</span>
+                  <span><strong className="text-white">Tolerante a fallos:</strong> versionado con vuelta atrás para recuperarse en segundos en pleno directo</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-emerald-400 mt-1">•</span>
-                  <span><strong className="text-white">Horario estelar:</strong> Transmitido a las 6:00 PM, compitiendo con programas de entretenimiento de otros canales</span>
+                  <span><strong className="text-white">Desarrollador único:</strong> construido y operado por mí</span>
                 </li>
               </ul>
             </div>
@@ -109,23 +106,30 @@ export default function PukllaspaYachayPage() {
 
             <div className="space-y-6">
               <div>
-                <h3 className="text-lg font-semibold text-white mb-3">Sistema de Competencia en Tiempo Real</h3>
+                <h3 className="text-lg font-semibold text-white mb-3">Sistema de competencia en tiempo real</h3>
                 <p className="text-gray-300 leading-relaxed">
-                  Desarrollé el sistema de gestión de competencias que permite controlar el flujo del programa en vivo, incluyendo la gestión de participantes, rondas de preguntas, y el sistema de puntuación en tiempo real.
+                  Desarrollé en Unity/C# el software que controla el programa en vivo: gestión de participantes, rondas, y más de 20 juegos interactivos en pantalla, cada uno con su propio sistema de puntuación, operado por mí durante la transmisión.
                 </p>
               </div>
 
               <div>
-                <h3 className="text-lg font-semibold text-white mb-3">Integración con Producción</h3>
+                <h3 className="text-lg font-semibold text-white mb-3">Colector de datos diario</h3>
                 <p className="text-gray-300 leading-relaxed">
-                  El software se integra con el sistema de producción de TV Perú, permitiendo a los operadores controlar elementos visuales en pantalla, gráficos de puntajes, y transiciones entre segmentos del programa.
+                  Como el programa salía a diario, construí un sistema aparte para cargar los datos de cada emisión — preguntas, imágenes y estructuras distintas por juego — de forma que la producción pudiera preparar el contenido del día sin tocar el software de juegos.
                 </p>
               </div>
 
               <div>
-                <h3 className="text-lg font-semibold text-white mb-3">Gestión de Múltiples Fases</h3>
+                <h3 className="text-lg font-semibold text-white mb-3">Confiabilidad en directo</h3>
                 <p className="text-gray-300 leading-relaxed">
-                  Implementé la lógica para manejar las diferentes etapas de la competencia: rondas diarias, competencias semanales, y semifinales, con seguimiento automático de ganadores y estadísticas.
+                  Implementé un esquema de versionado con vuelta atrás: el sistema trabajaba con la última versión, pero podía caer a una anterior si algo fallaba. En un programa en vivo cualquier error tenía que resolverse en segundos, y el sistema operó temporadas completas sin caídas al aire.
+                </p>
+              </div>
+
+              <div>
+                <h3 className="text-lg font-semibold text-white mb-3">Integración con producción</h3>
+                <p className="text-gray-300 leading-relaxed">
+                  El software se integraba con la producción de TV Perú para controlar los gráficos en pantalla, los puntajes y las transiciones entre segmentos del programa.
                 </p>
               </div>
             </div>
@@ -133,67 +137,37 @@ export default function PukllaspaYachayPage() {
             <div className="mt-8 pt-8 border-t border-white/10">
               <h3 className="text-lg font-semibold text-white mb-4">Stack Técnico</h3>
               <div className="flex flex-wrap gap-2">
-                <span className="px-3 py-1 bg-emerald-500/20 text-emerald-300 rounded-full text-sm border border-emerald-500/30">
-                  C#
-                </span>
-                <span className="px-3 py-1 bg-emerald-500/20 text-emerald-300 rounded-full text-sm border border-emerald-500/30">
-                  .NET
-                </span>
-                <span className="px-3 py-1 bg-emerald-500/20 text-emerald-300 rounded-full text-sm border border-emerald-500/30">
-                  Real-time Systems
-                </span>
-                <span className="px-3 py-1 bg-emerald-500/20 text-emerald-300 rounded-full text-sm border border-emerald-500/30">
-                  Broadcast Software
-                </span>
+                {["Unity", "C#", ".NET", "Real-time", "Broadcast Software"].map((tech) => (
+                  <span key={tech} className="px-3 py-1 bg-emerald-500/20 text-emerald-300 rounded-full text-sm border border-emerald-500/30">
+                    {tech}
+                  </span>
+                ))}
               </div>
             </div>
           </div>
 
           <div className="glass-card p-8 rounded-2xl border border-white/10">
-            <h2 className="text-2xl font-bold text-white mb-6">
-              <Award className="w-6 h-6 text-emerald-400" />
+            <h2 className="text-2xl font-bold text-white mb-6 flex items-center gap-2">
+              <Check className="w-6 h-6 text-emerald-400" />
               Impacto y Alcance
             </h2>
             <div className="space-y-4">
-              <div className="flex items-start gap-3">
-                <div className="w-8 h-8 bg-emerald-500/20 rounded-lg flex items-center justify-center shrink-0 mt-1">
-                  <span className="text-emerald-400 font-bold">✓</span>
+              {[
+                ["Transmisión nacional en vivo", "Programa emitido en horario estelar por TV Perú durante alrededor de dos años y medio."],
+                ["Operación sin fallos", "El sistema operó temporadas completas en directo, con recuperación en segundos ante cualquier incidencia."],
+                ["Base de todo lo que siguió", "El sistema que construí aquí fue el punto de partida del que hoy opera “Que Gane el Mejor”, ya migrado a web."],
+                ["Preservación cultural", "Aporte a la promoción y enseñanza del idioma quechua en el Perú."],
+              ].map(([title, desc]) => (
+                <div key={title} className="flex items-start gap-3">
+                  <div className="w-8 h-8 bg-emerald-500/20 rounded-lg flex items-center justify-center shrink-0 mt-1">
+                    <Check className="w-4 h-4 text-emerald-400" />
+                  </div>
+                  <div>
+                    <p className="text-white font-medium">{title}</p>
+                    <p className="text-gray-400 text-sm">{desc}</p>
+                  </div>
                 </div>
-                <div>
-                  <p className="text-white font-medium">Transmisión Nacional</p>
-                  <p className="text-gray-400 text-sm">Programa transmitido en horario estelar por TV Perú, alcanzando audiencia a nivel nacional</p>
-                </div>
-              </div>
-
-              <div className="flex items-start gap-3">
-                <div className="w-8 h-8 bg-emerald-500/20 rounded-lg flex items-center justify-center shrink-0 mt-1">
-                  <span className="text-emerald-400 font-bold">✓</span>
-                </div>
-                <div>
-                  <p className="text-white font-medium">Preservación Cultural</p>
-                  <p className="text-gray-400 text-sm">Contribución a la promoción y enseñanza del idioma quechua en el Perú</p>
-                </div>
-              </div>
-
-              <div className="flex items-start gap-3">
-                <div className="w-8 h-8 bg-emerald-500/20 rounded-lg flex items-center justify-center shrink-0 mt-1">
-                  <span className="text-emerald-400 font-bold">✓</span>
-                </div>
-                <div>
-                  <p className="text-white font-medium">Buena Recepción del Público</p>
-                  <p className="text-gray-400 text-sm">El programa fue bien acogido por la audiencia desde sus primeras semanas de transmisión</p>
-                </div>
-              </div>
-
-              <div className="flex items-start gap-3">
-                <div className="w-8 h-8 bg-emerald-500/20 rounded-lg flex items-center justify-center shrink-0 mt-1">
-                  <span className="text-emerald-400 font-bold">✓</span>
-                </div>
-                <div>
-                  <p className="text-white font-medium">Operación en Vivo</p>
-                  <p className="text-gray-400 text-sm">Software operado exitosamente durante transmisiones en vivo sin interrupciones técnicas</p>
-                </div>
-              </div>
+              ))}
             </div>
           </div>
 
