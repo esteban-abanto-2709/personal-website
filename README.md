@@ -16,11 +16,11 @@ estudio, i18n español/inglés y descarga de CV.
 ## Desarrollo
 
 ```bash
-npm install
-npm run dev      # http://localhost:3000
+pnpm install
+pnpm dev      # http://localhost:3000
 ```
 
-Otros scripts: `npm run build`, `npm run start`, `npm run lint`.
+Otros scripts: `pnpm build`, `pnpm start`, `pnpm lint`.
 
 ## Estructura
 

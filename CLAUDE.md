@@ -38,9 +38,9 @@ nombres** (`CV_Esteban_Abanto_ES.pdf`, `_EN.pdf`) para no romper el link.
 ## Comandos
 
 ```bash
-npm run dev     # desarrollo
-npm run build   # build de producción
-npm run lint    # eslint
+pnpm dev     # desarrollo
+pnpm build   # build de producción
+pnpm lint    # eslint
 ```
 
 ## Seguimiento

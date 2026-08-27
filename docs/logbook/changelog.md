@@ -15,6 +15,9 @@ Resumen en ≤2 líneas de lo que se hizo.
 ## [RM-001] Reposicionamiento del sitio: de game dev a full-stack (2026-08-26 22:13)
 Volcado el sitio a full-stack/web en 5 commits: PDFs públicos, datos de experiencia (+GDP Studios), stack sin barras de %, hero, proyectos web, metadata y páginas tv-peru reencuadradas como sistema web. Build verde en cada bloque.
 
+## [RM-005] Migración de npm a pnpm (2026-08-26 22:51)
+Proyecto migrado a pnpm: `packageManager: pnpm@11.8.0` en package.json, `package-lock.json` eliminado y `pnpm-lock.yaml` generado. `pnpm run build` verde. README y CLAUDE.md actualizados.
+
 ## [TD-004] Nombre de TDCLA reconciliado — sin cambios en el sitio (2026-08-26 22:47)
 El cerebro confirmó, con la constancia firmada, que la razón social es "Tecnologías del Conocimiento S.A.C." ("Latinoamérica" no figura en el documento). El sitio ya usaba "S.A.C. (TDCLA)" (correcto); el error estaba en el CV y se corrigió allá. Sin cambios en este repo.
 
