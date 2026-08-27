@@ -14,7 +14,7 @@ export default function Footer() {
         <div className="flex flex-col md:flex-row justify-between items-center gap-4">
           <div className="text-center md:text-left">
             <p>{t("madeWith")}</p>
-            <p>&copy; 2025 Esteban Abanto.</p>
+            <p>&copy; {new Date().getFullYear()} Esteban Abanto.</p>
           </div>
 
           <div className="flex items-center space-x-4">

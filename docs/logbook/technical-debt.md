@@ -20,13 +20,6 @@ changelog y se borra de aquí.
 - **Impacto futuro:** Un visitante en inglés ve el sitio en inglés pero estas subpáginas en español. Al actualizar contenido hay que tocar JSX en dos idiomas a mano; fácil que queden desincronizadas con el CV.
 - **Fecha:** 2026-07-31 · **Estado:** Abierto
 
-## [TD-002] Dependencia `next-intl` instalada pero sin uso
-- **Ubicación:** `package.json:16`
-- **Riesgo:** 2/10
-- **Problema:** `next-intl` figura en dependencies pero el i18n está resuelto con una implementación propia (`src/lib/i18n/`). La librería nunca se importa.
-- **Impacto futuro:** Peso muerto en el bundle/instalación y confusión sobre cuál es el mecanismo real de i18n. Decidir: adoptarla y borrar el custom, o quitarla.
-- **Fecha:** 2026-07-31 · **Estado:** Abierto
-
 ## [TD-004] [Para el cerebro] Nombre de TDCLA desincronizado entre CV/PDF y sitio
 - **Ubicación:** `cv/cv.es.md` y `cv/cv.en.md` (línea de TDCLA)
 - **Riesgo:** 3/10

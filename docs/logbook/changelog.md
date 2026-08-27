@@ -12,6 +12,9 @@ Resumen en ≤2 líneas de lo que se hizo.
 
 ---
 
+## [TD-002] Dependencia next-intl instalada pero sin uso (2026-08-26 22:10)
+Eliminada con `npm uninstall next-intl`; el i18n propio queda como único mecanismo. Build verde.
+
 ## [TD-003] Juego repetido en la lista de "Que Gane el Mejor" (2026-08-26 22:05)
 Corregido al reescribir la página `tv-peru/que-gane-el-mejor` en el reframe a sistema web; la frase ya no duplica "Personajes".
 
