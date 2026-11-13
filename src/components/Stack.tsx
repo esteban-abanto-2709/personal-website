@@ -2,7 +2,7 @@
 
 import { useTranslations, useMessages } from "@/hooks";
 
-const ORDER = ["languages", "backend", "frontend", "databases", "devops"] as const;
+const ORDER = ["languages", "backend", "frontend", "databases", "devops", "ai"] as const;
 
 export default function Stack() {
   const t = useTranslations("stack");

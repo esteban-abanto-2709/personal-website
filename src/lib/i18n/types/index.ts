@@ -61,6 +61,7 @@ export interface Messages {
       frontend: string;
       databases: string;
       devops: string;
+      ai: string;
     };
     skills: {
       languages: string[];
@@ -68,6 +69,7 @@ export interface Messages {
       frontend: string[];
       databases: string[];
       devops: string[];
+      ai: string[];
     };
     note: string;
   };

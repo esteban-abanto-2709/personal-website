@@ -12,6 +12,9 @@ Resumen en ≤2 líneas de lo que se hizo.
 
 ---
 
+## [RM-006] Sitio y PDFs sincronizados con el CV de noviembre 2026 (2026-11-13 16:52)
+PDFs de `public/` reemplazados por `cv/dist` y contenido ES/EN alineado al CV: IRTP cerrado en setiembre 2026 con cargo y logros reales, Treno, stack con AWS e IA aplicada, fecha de Netdreams corregida. Páginas `tv-peru/*` reescritas sin las afirmaciones falsas (Supabase/Vercel, rollback, load-first, editor). Build verde.
+
 ## [RM-001] Reposicionamiento del sitio: de game dev a full-stack (2026-08-26 22:13)
 Volcado el sitio a full-stack/web en 5 commits: PDFs públicos, datos de experiencia (+GDP Studios), stack sin barras de %, hero, proyectos web, metadata y páginas tv-peru reencuadradas como sistema web. Build verde en cada bloque.
 

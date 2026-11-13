@@ -13,4 +13,16 @@ changelog y se borra de aquí.
 
 ---
 
-_Sin deuda abierta por ahora._
+## [TD-005] `pnpm lint` falla en LocaleProvider
+- **Ubicación:** `src/lib/i18n/components/LocaleProvider.tsx:47`
+- **Riesgo:** 4/10
+- **Problema:** dos errores de `react-hooks`: `setState` síncrono dentro del `useEffect` y `loadMessages` usado antes de declararse.
+- **Impacto futuro:** el lint no pasa, así que deja de servir como verificación y tapa errores nuevos.
+- **Fecha:** 2026-11-13 · **Estado:** Abierto
+
+## [TD-006] `<html lang>` fijo en inglés y parpadeo de idioma
+- **Ubicación:** `src/app/layout.tsx:21`
+- **Riesgo:** 3/10
+- **Problema:** el servidor siempre renderiza en inglés con `lang="en"`; el cambio a español ocurre en el cliente y el atributo `lang` nunca se actualiza.
+- **Impacto futuro:** un visitante en español ve primero el texto en inglés, y buscadores y lectores de pantalla reciben el idioma equivocado.
+- **Fecha:** 2026-11-13 · **Estado:** Abierto

@@ -1,6 +1,6 @@
 {
   "navigation": {
-    "title": "Desarrollador de Software",
+    "title": "Desarrollador Full Stack",
     "experience": "Experiencia",
     "projects": "Proyectos",
     "stack": "Stack"
@@ -9,32 +9,33 @@
     "greeting": "Hola,",
     "iam": "Soy",
     "name": "Esteban Abanto",
-    "title": "Desarrollador de Software",
-    "description": "Construyo aplicaciones web full-stack y sistemas en tiempo real. Más de 5 años entregando software confiable en entornos de producción exigentes, hoy enfocado en TypeScript, NestJS, Next.js y Docker.",
+    "title": "Desarrollador Full Stack",
+    "description": "Construyo aplicaciones web full-stack y sistemas en tiempo real. Casi 6 años entregando software confiable en entornos de producción exigentes, hoy enfocado en TypeScript, NestJS, Next.js y AWS.",
     "downloadCV": "Descargar CV"
   },
   "experience": {
     "title": "Experiencia Profesional",
     "jobs": [
       {
-        "title": "Desarrollador de Software",
+        "title": "Gestor de Proyectos Tecnológicos (Full Stack)",
         "company": "IRTP / TV Perú",
-        "years": "Marzo 2021 - Presente",
-        "description": "Desarrollador único y operador en vivo del software en tiempo real de dos programas concurso de TV nacional. Migré todo el sistema de Unity a un stack web moderno — Next.js en Vercel, Supabase para almacenamiento, base de datos y control de acceso, y Cloudflare — con versionado por despliegue y rollback instantáneo, hoy al aire. Construí un editor online para reposicionar imágenes, video y fondos en vivo, y un sistema de votación en vivo por QR con protecciones anti-abuso.",
+        "years": "Marzo 2021 - Setiembre 2026",
+        "description": "Único responsable técnico de la producción de dos programas concurso de TV nacional (Pukllaspa Yachay y Que Gane el Mejor): 5 años de transmisiones en vivo sin fallos al aire. Desarrollé y operé en vivo más de 20 juegos interactivos, que pasé de Unity a web con Next.js y desplegué en AWS. Rehíce el sistema interno de archivos de la producción con Next.js, NestJS y PostgreSQL en AWS, con Docker y CI/CD, e integré un LLM local en el colector de datos de los juegos.",
         "stack": [
           "Next.js",
+          "NestJS",
           "TypeScript",
-          "Supabase",
-          "Vercel",
-          "C#",
-          "Real-time"
+          "PostgreSQL",
+          "AWS",
+          "Docker",
+          "C#"
         ]
       },
       {
         "title": "Desarrollador de Software",
         "company": "GDP Studios",
         "years": "Noviembre 2024 - Febrero 2025",
-        "description": "Desarrollo y mantenimiento de software Unity/C# en producción para máquinas tragamonedas sobre Linux (Ubuntu). Refactorización de código desordenado y mentoring a un equipo de ingenieros sobre la arquitectura de componentes de Unity.",
+        "description": "Software Unity/C# en producción para máquinas de casino sobre Linux (Ubuntu), en equipo con Jira. Refactoricé grandes cantidades de código heredado y capacité al equipo en arquitectura de componentes y buenas prácticas.",
         "stack": [
           "Unity",
           "C#",
@@ -42,35 +43,35 @@
         ]
       },
       {
-        "title": "Desarrollador de Juegos de Realidad Virtual",
+        "title": "Desarrollador VR",
         "company": "Tecnologías del Conocimiento S.A.C. (TDCLA)",
         "years": "Abril 2023 - Noviembre 2023",
-        "description": "Diseño y programación de experiencias inmersivas en entornos de realidad virtual. Integración de interacciones avanzadas con dispositivos VR y coordinación con equipos multidisciplinarios para el desarrollo de productos educativos y de simulación.",
+        "description": "Programador principal (bajo revisión de un senior) de experiencias de capacitación en realidad virtual con Unity/C# para una empresa de e-learning, incluida una demo para inversores y un proyecto para cliente.",
         "stack": [
           "Unity",
           "C#",
-          "VR Development"
+          "VR"
+        ]
+      },
+      {
+        "title": "Desarrollador de Software Unity",
+        "company": "Rebel Rabbit",
+        "years": "Febrero 2022 - Marzo 2023",
+        "description": "Programador secundario en proyectos Unity/C#: features de gameplay, sistemas y comportamiento de enemigos, en un equipo multidisciplinario.",
+        "stack": [
+          "Unity",
+          "C#"
         ]
       },
       {
         "title": "Programador de Videojuegos",
-        "company": "Rebel Rabbit - RBLRBT SAC",
-        "years": "Febrero 2022 - Marzo 2023",
-        "description": "Implementación de mecánicas de juego, refactorización de sistemas heredados y desarrollo de herramientas personalizadas para mejorar la productividad del equipo. Participación activa en la definición técnica de features.",
+        "company": "Netdreams Perú (REGOB EIRL)",
+        "years": "Enero 2021 - Enero 2022",
+        "description": "Único programador de dos juegos completos en Unity/C#, con un sistema de analíticas de jugador (GameAnalytics).",
         "stack": [
           "Unity",
           "C#",
-          "Custom Tools"
-        ]
-      },
-      {
-        "title": "Desarrollador de Juegos 2D",
-        "company": "Net Dreams - REGOB EIRL",
-        "years": "Enero 2021 - Diciembre 2021",
-        "description": "Desarrollé dos juegos completos de principio a fin como único programador en Unity/C#, más un sistema de analíticas de jugador con GameAnalytics para medir la progresión y el comportamiento del jugador.",
-        "stack": [
-          "Unity",
-          "C#"
+          "GameAnalytics"
         ]
       }
     ]
@@ -81,48 +82,50 @@
     "items": [
       {
         "title": "Que Gane el Mejor",
-        "description": "Sistema de competencia educativa para estudiantes de secundaria, transmitido nacionalmente por TV Perú. Gestión de 28 colegios y más de 600 participantes.",
+        "description": "Juegos interactivos en vivo de un concurso escolar transmitido a nivel nacional por TV Perú, con 28 colegios y más de 600 participantes. Los pasé de Unity a web.",
         "techStack": [
           "Next.js",
           "TypeScript",
-          "Supabase",
-          "Vercel",
+          "AWS",
+          "Docker",
           "Real-time"
         ],
         "link": "/tv-peru/que-gane-el-mejor",
-        "year": "2021 - Presente"
+        "year": "2023 - 2026"
       },
       {
         "title": "Pukllaspa Yachay",
-        "description": "Programa concurso en quechua para la promoción del idioma. Sistema de competencia en tiempo real con gestión de participantes y puntajes en vivo.",
+        "description": "Programa concurso en quechua para la promoción del idioma. Más de 20 juegos interactivos en Unity, operados en vivo a diario.",
         "techStack": [
+          "Unity",
           "C#",
-          ".NET",
-          "Real-time Systems",
-          "Broadcast Software"
+          "Real-time"
         ],
         "link": "/tv-peru/pukllaspa-yachay",
-        "year": "2021"
+        "year": "2021 - 2023"
       },
       {
-        "title": "Gym Tracker",
-        "description": "App full-stack self-hosted para registrar y analizar entrenamientos. Todo el stack corre en Docker; frontend expuesto vía Cloudflare Tunnel.",
+        "title": "Treno",
+        "description": "App de entrenamiento en producción con usuarios reales desde octubre de 2026 (treno.rocks), desplegada en AWS con CI/CD y pruebas automatizadas.",
         "techStack": [
           "NestJS",
           "Next.js",
           "PostgreSQL",
-          "Docker"
+          "Prisma",
+          "Docker",
+          "AWS"
         ],
         "link": "https://github.com/esteban-abanto-2709/gym-tracker",
         "year": "2026"
       },
       {
         "title": "Rally",
-        "description": "Plataforma de gestión de tareas con autenticación JWT, CRUD de proyectos y tareas, y contenedorización completa con Docker.",
+        "description": "Gestor de proyectos y tareas con API REST y autenticación JWT.",
         "techStack": [
           "NestJS",
-          "Next.js",
           "Prisma",
+          "PostgreSQL",
+          "Next.js",
           "Docker"
         ],
         "link": "https://github.com/esteban-abanto-2709/rally-app",
@@ -130,14 +133,14 @@
       },
       {
         "title": "Ephemeral Chat",
-        "description": "App de mensajería efímera y anónima en tiempo real, sin almacenamiento de datos. Usando React, Socket.IO y Express.",
+        "description": "Chat anónimo en tiempo real con salas dinámicas, sin persistencia de datos.",
         "techStack": [
           "React",
           "TypeScript",
           "Socket.IO",
           "Express"
         ],
-        "link": "https://ephemeral-chat-xuou.onrender.com",
+        "link": "https://ephemeral-chat-9f8t.onrender.com",
         "year": "2025"
       }
     ]
@@ -149,14 +152,16 @@
       "backend": "Backend",
       "frontend": "Frontend",
       "databases": "Bases de datos",
-      "devops": "DevOps y Herramientas"
+      "devops": "Cloud, DevOps y Herramientas",
+      "ai": "IA aplicada"
     },
     "skills": {
-      "languages": ["TypeScript", "C#", "JavaScript", "SQL", "Python"],
-      "backend": ["NestJS", "Node.js", "Express", "REST APIs", "Prisma", "Supabase"],
-      "frontend": ["Next.js", "React", "TailwindCSS", "HTML / CSS"],
-      "databases": ["PostgreSQL", "MySQL", "SQL Server"],
-      "devops": ["Docker", "Docker Compose", "Git", "Linux", "Vercel", "Cloudflare", "Jira"]
+      "languages": ["TypeScript", "JavaScript", "C#", "SQL", "Python"],
+      "backend": ["Node.js", "NestJS", "Express", "REST APIs", "Prisma", "Supabase", "JWT / OAuth"],
+      "frontend": ["React", "Next.js", "Angular", "TailwindCSS", "Zustand", "HTML / CSS"],
+      "databases": ["PostgreSQL", "MySQL", "SQL Server", "MongoDB"],
+      "devops": ["AWS", "GitHub Actions (CI/CD)", "Docker", "Docker Compose", "Linux", "Vercel", "Cloudflare", "Git", "Jira"],
+      "ai": ["APIs de LLM (OpenAI, Anthropic)", "LLM local con Ollama", "Salidas estructuradas en JSON", "Claude Code", "Codex"]
     },
     "note": "Experiencia adicional en desarrollo de videojuegos con Unity y C# (game dev)."
   },
@@ -170,70 +175,70 @@
       "impact": "Impacto y Alcance"
     },
     "queGane": {
-      "badge": "Sistema en producción · TV nacional",
+      "badge": "Sistema en vivo · TV nacional",
       "title": "Que Gane el Mejor",
-      "subtitle": "Software en tiempo real que opera un concurso escolar en vivo por TV Perú, migrado de Unity a un stack web moderno.",
+      "subtitle": "Los juegos interactivos en vivo de un concurso escolar de TV Perú, y los sistemas de la producción detrás de ellos.",
       "stats": [
         { "value": "600+", "label": "Estudiantes" },
         { "value": "28", "label": "Colegios" },
         { "value": "En vivo", "label": "Cero fallos al aire" },
-        { "value": "Next.js", "label": "Stack actual" }
+        { "value": "2023 – 2026", "label": "A cargo del sistema" }
       ],
       "about": [
         "“Que Gane el Mejor” es un programa concurso de TV Perú que enfrenta a dos colegios por episodio, con equipos de siete estudiantes de quinto de secundaria compitiendo en juegos de conocimiento.",
         "Sale al aire en vivo, con juegos como “Personajes” y “Mi libro favorito”, y grandes finales que reúnen a cientos de estudiantes de colegios de distintas regiones del país."
       ],
       "system": [
-        { "label": "Tiempo real:", "text": "gestiona en vivo los juegos en pantalla, los puntajes y el flujo del programa" },
-        { "label": "Operado desde el switcher:", "text": "yo mismo lo opero durante la transmisión" },
-        { "label": "Sin caídas:", "text": "cualquier fallo debe recuperarse en segundos, en pleno directo" },
-        { "label": "Desarrollador único:", "text": "lo construyo y mantengo yo solo" }
+        { "label": "Tiempo real:", "text": "los juegos en pantalla, los puntajes y el flujo del programa, en vivo" },
+        { "label": "Operado desde el switcher:", "text": "lo operaba yo mismo durante la transmisión" },
+        { "label": "Sin margen de error:", "text": "cualquier fallo debía resolverse en segundos, en pleno directo" },
+        { "label": "Único responsable técnico:", "text": "desarrollo, infraestructura y operación a mi cargo" }
       ],
       "role": [
-        { "title": "Migración de Unity a la web", "body": "Migré todo el sistema de una aplicación Unity a un stack web moderno: Next.js desplegado en Vercel, Supabase para almacenamiento, base de datos y control de acceso, y Cloudflare. Hoy está al aire. Aproveché el versionado por despliegue de Vercel para tener rollback instantáneo: si una versión falla, vuelvo a la anterior sin sacar el programa del aire." },
-        { "title": "Editor en vivo y arquitectura load-first", "body": "Construí un editor online que permite reposicionar imágenes, video y fondos en directo — algo imposible con el compilado de Unity anterior. Todo sobre una arquitectura load-first, con manejo cuidadoso de la RAM para garantizar renderizado sin interrupciones durante el programa en vivo." },
-        { "title": "Pipeline de datos y operación diaria", "body": "La producción sube los datos del día a la nube y el sistema los descarga para operar el programa. Un esquema de datos “en vivo” y “de ejemplo” permite que los conductores revisen la información desde tablets y que la producción corrija datos al instante desde detrás de cámaras." },
-        { "title": "Votación del público en vivo", "body": "Desarrollé un sistema de votación por QR para que los televidentes apoyen a un colegio, con protecciones anti-abuso apoyadas en Cloudflare Tunnel para evitar votos múltiples y ataques." }
+        { "title": "Juegos de Unity a la web", "body": "Con el arranque del programa pasé los juegos interactivos de Unity a la web: primero solo con Next.js y después con el stack completo desplegado en AWS. Los operaba yo mismo desde el switcher durante cada transmisión." },
+        { "title": "Sistema interno de archivos de la producción", "body": "Mantuve y luego rehíce el sistema donde la producción guarda sus grabaciones, imágenes y documentos: de React, Express y MySQL en una PC local a Next.js, NestJS, TypeScript y PostgreSQL en AWS (EC2 y S3), con Docker y CI/CD con GitHub Actions. En el camino corregí una inyección SQL y contraseñas guardadas en texto plano." },
+        { "title": "Colector de datos con un LLM local", "body": "Construí el colector de datos de los juegos. Desde mediados de 2025 le integré un LLM local (Qwen 2.5 sobre Ollama, dockerizado): a partir de un tema, el modelo devolvía JSON con un formato definido, que el sistema convertía en preguntas para los juegos, listas para la revisión del docente. También corregía ortografía y redujo el trabajo manual y repetitivo de cargar contenido." },
+        { "title": "Votación del público en vivo", "body": "Desarrollé un sistema de votación por QR para que los televidentes apoyen a un colegio, con protección anti-abuso para evitar votos múltiples. Después pasó al equipo de ingeniería de TV Perú." }
       ],
-      "tech": ["Next.js", "TypeScript", "Vercel", "Supabase", "Cloudflare", "Real-time", "C# / Unity (legacy)"],
+      "tech": ["Next.js", "NestJS", "TypeScript", "PostgreSQL", "AWS", "Docker", "GitHub Actions", "Ollama"],
       "impact": [
-        { "title": "En producción, al aire", "desc": "Sistema operando en vivo en televisión nacional durante múltiples temporadas, sin caídas al aire." },
-        { "title": "Migración a web sin sacar el programa del aire", "desc": "El sistema pasó de Unity a Next.js / Vercel / Supabase con el programa al aire, usando el rollback instantáneo como red de seguridad." },
+        { "title": "Cero fallos al aire", "desc": "Transmisiones en vivo en televisión nacional, sin fallos al aire." },
+        { "title": "De una PC local a la nube", "desc": "El sistema de archivos de la producción dejó de depender de una sola máquina y pasó a AWS, con despliegue automatizado." },
         { "title": "Alcance nacional", "desc": "Más de 600 estudiantes de 28 colegios de distintas regiones del Perú." },
-        { "title": "Desarrollador único", "desc": "Diseño, desarrollo y operación en vivo a cargo de una sola persona." }
+        { "title": "Único responsable técnico", "desc": "Desarrollo, infraestructura y operación en vivo a cargo de una sola persona." }
       ]
     },
     "pukllaspa": {
       "badge": "Sistema en tiempo real · TV nacional",
       "title": "Pukllaspa Yachay",
-      "subtitle": "El origen del sistema en vivo que operé para TV Perú: un concurso diario en quechua, construido y operado en tiempo real.",
+      "subtitle": "Donde empezó todo: un concurso diario en quechua de TV Perú, con más de 20 juegos interactivos construidos en Unity y operados en vivo.",
       "stats": [
         { "value": "2021", "label": "Estreno" },
-        { "value": "~2.5 años", "label": "Al aire" },
+        { "value": "2021 – 2023", "label": "Al aire" },
         { "value": "Diario", "label": "En vivo, 18:00" },
         { "value": "20+", "label": "Juegos en pantalla" }
       ],
       "about": [
         "Pukllaspa Yachay (“Aprende Jugando”) fue un programa concurso de TV Perú para promover el aprendizaje del quechua, con una competencia diaria entre tres participantes.",
-        "Se transmitió en vivo en horario estelar durante alrededor de dos años y medio. Fue el primer programa para el que desarrollé el sistema, y el punto de partida de todo lo que vino después."
+        "Se transmitió en vivo durante más de dos años. Fue el primer programa para el que desarrollé los juegos, y el punto de partida de todo lo que vino después."
       ],
       "system": [
         { "label": "Tiempo real:", "text": "control del flujo del programa, rondas y puntajes en directo" },
         { "label": "Datos diarios:", "text": "cada emisión requería nuevas preguntas, imágenes y estructuras por juego" },
-        { "label": "Tolerante a fallos:", "text": "versionado con vuelta atrás para recuperarse en segundos en pleno directo" },
-        { "label": "Desarrollador único:", "text": "construido y operado por mí" }
+        { "label": "Sin margen de error:", "text": "cualquier fallo debía resolverse en segundos, en pleno directo" },
+        { "label": "Único responsable técnico:", "text": "construido y operado por mí" }
       ],
       "role": [
-        { "title": "Sistema de competencia en tiempo real", "body": "Desarrollé en Unity/C# el software que controla el programa en vivo: gestión de participantes, rondas, y más de 20 juegos interactivos en pantalla, cada uno con su propio sistema de puntuación, operado por mí durante la transmisión." },
+        { "title": "Juegos interactivos en tiempo real", "body": "Desarrollé en Unity/C# el software que controla el programa en vivo: gestión de participantes, rondas, y más de 20 juegos interactivos en pantalla, cada uno con su propio sistema de puntuación, operado por mí durante la transmisión." },
         { "title": "Colector de datos diario", "body": "Como el programa salía a diario, construí un sistema aparte para cargar los datos de cada emisión — preguntas, imágenes y estructuras distintas por juego — de forma que la producción pudiera preparar el contenido del día sin tocar el software de juegos." },
-        { "title": "Confiabilidad en directo", "body": "Implementé un esquema de versionado con vuelta atrás: el sistema trabajaba con la última versión, pero podía caer a una anterior si algo fallaba. En un programa en vivo cualquier error tenía que resolverse en segundos, y el sistema operó temporadas completas sin caídas al aire." },
+        { "title": "Confiabilidad en directo", "body": "En un programa en vivo cualquier error tenía que resolverse en segundos. Los juegos operaron temporadas completas sin fallos al aire." },
         { "title": "Integración con producción", "body": "El software se integraba con la producción de TV Perú para controlar los gráficos en pantalla, los puntajes y las transiciones entre segmentos del programa." }
       ],
-      "tech": ["Unity", "C#", ".NET", "Real-time", "Broadcast Software"],
+      "tech": ["Unity", "C#", "Real-time", "Broadcast Software"],
       "impact": [
-        { "title": "Transmisión nacional en vivo", "desc": "Programa emitido en horario estelar por TV Perú durante alrededor de dos años y medio." },
-        { "title": "Operación sin fallos", "desc": "El sistema operó temporadas completas en directo, con recuperación en segundos ante cualquier incidencia." },
-        { "title": "Base de todo lo que siguió", "desc": "El sistema que construí aquí fue el punto de partida del que hoy opera “Que Gane el Mejor”, ya migrado a web." },
+        { "title": "Transmisión nacional en vivo", "desc": "Programa emitido a diario por TV Perú durante más de dos años." },
+        { "title": "Operación sin fallos", "desc": "Los juegos operaron temporadas completas en directo, sin fallos al aire." },
+        { "title": "Base de todo lo que siguió", "desc": "Los juegos que construí aquí fueron el punto de partida de los que después pasé a web para “Que Gane el Mejor”." },
         { "title": "Preservación cultural", "desc": "Aporte a la promoción y enseñanza del idioma quechua en el Perú." }
       ]
     }
