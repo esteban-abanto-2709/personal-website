@@ -1,4 +1,6 @@
-# CLAUDE.md — personal-website
+# CLAUDE.md
+
+This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
 
 Convenciones específicas de este repo. Lo general (estilo de código, logbook,
 flujo de trabajo) vive en el `CLAUDE.md` global.
@@ -14,8 +16,16 @@ desplegado en Vercel. Landing de una sola página + páginas de caso de estudio 
 - **El contenido del sitio vive en `src/lib/i18n/messages/es.json` y `en.json`**, no en
   los componentes. Un cambio de texto (experiencia, proyectos, stack) se hace en esos
   dos archivos, y **ambos idiomas se mantienen en sincronía**.
-- **i18n es propio**, no `next-intl` (está en `package.json` pero sin usar → deuda).
-  El patrón es `useTranslations("seccion")` + `useMessages()` sobre el `LocaleProvider`.
+- **i18n es propio**, sin librería. El patrón es `useTranslations("seccion")` (claves
+  string) o `useMessages()` (objeto tipado, para arrays/estructuras), ambos exportados
+  desde `@/hooks` y leídos del `LocaleProvider`.
+- **Agregar o cambiar la forma de una clave** = tocar `es.json`, `en.json` **y** la
+  interfaz `Messages` en `src/lib/i18n/types/index.ts`. `useTranslations` no falla con
+  una clave inexistente: hace `console.warn` y devuelve la clave tal cual.
+- **Cómo se elige el idioma:** `layout.tsx` (server) siempre carga `en` como
+  `initialMessages`; en el cliente, `LocaleProvider` lee `localStorage["locale"]` o el
+  idioma del navegador y, si no es `en`, importa dinámicamente el otro JSON. Por eso
+  todo componente que muestra texto es `"use client"` (ver TD-006 por el parpadeo).
 - Las páginas `src/app/tv-peru/*` renderizan `<TvPeruCaseStudy which="…" />`, que lee su
   contenido de la sección `tvPeru` de los messages (es/en) — igual que el resto del sitio.
 - Tailwind v4: usar utilidades modernas (`bg-linear-to-br`, etc.), no config de v3.
@@ -40,8 +50,11 @@ nombres** (`CV_Esteban_Abanto_ES.pdf`, `_EN.pdf`) para no romper el link.
 ```bash
 pnpm dev     # desarrollo
 pnpm build   # build de producción
-pnpm lint    # eslint
+pnpm lint    # eslint (hoy falla por TD-005 en LocaleProvider)
 ```
+
+No hay tests: la verificación de un cambio es `pnpm build` (incluye type-check) y
+`pnpm lint`. Deploy automático en Vercel al hacer push a `main`.
 
 ## Seguimiento
 

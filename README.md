@@ -44,9 +44,7 @@ public/                  # avatar, CVs en PDF que sirve el botón "Descargar CV"
 El texto del sitio **no está hardcodeado** en los componentes: vive en
 `src/lib/i18n/messages/es.json` e `en.json`. Para editar experiencia, proyectos o
 stack, se editan esos archivos — **ambos idiomas deben mantenerse en sincronía**.
-
-> Excepción conocida: las páginas `src/app/tv-peru/*` sí tienen el texto en el JSX
-> (solo español). Registrado como deuda técnica en `docs/logbook/technical-debt.md`.
+Las páginas de caso de estudio (`src/app/tv-peru/*`) también: leen la sección `tvPeru`.
 
 ## CV
 
