@@ -19,7 +19,6 @@ const socials = [
 
 export default function CinematicHero() {
   const t = useTranslations("hero");
-  const nav = useTranslations("navigation");
   const { locale } = useLocale();
   const root = useRef<HTMLElement>(null);
 
@@ -77,12 +76,7 @@ export default function CinematicHero() {
       <div data-veil className="absolute inset-0 bg-ink opacity-0" />
       <div className="grain" />
 
-      <div className="relative z-10 flex h-full flex-col justify-between p-6 md:p-10">
-        <div className="flex items-center justify-between font-label text-xs uppercase tracking-[0.25em]">
-          <span>Esteban Abanto</span>
-          <span className="hidden sm:inline">{nav("title")}</span>
-        </div>
-
+      <div className="relative z-10 flex h-full flex-col justify-end p-6 md:p-10">
         <div className="flex flex-col gap-6 md:flex-row md:items-end md:justify-between md:gap-10">
           <div data-title className="min-w-0">
             <p data-fade className="mb-4 font-label text-xs uppercase tracking-[0.25em] text-ember">

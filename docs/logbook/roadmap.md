@@ -15,18 +15,6 @@ con blur, grano y degradé, tipografía enorme y scroll animado con GSAP + Lenis
 Audiencia: reclutadores y tech leads. La TV es un capítulo destacado, no la
 identidad del sitio.
 
-## [RM-007] Demo aislada del hero
-- **Objetivo:** validar la dirección visual (foto, fuentes, paleta, animación) en una ruta `/demo` sin tocar el sitio real.
-- **Hecho cuando:** `/demo` muestra el hero nuevo completo y Esteban aprueba o corrige el estilo.
-- **Prerequisito:** ninguno.
-- **Fecha:** 2026-11-13 · **Estado:** En progreso (2026-11-13)
-
-## [RM-008] Header de la landing nueva en `/demo`
-- **Objetivo:** header fijo con navegación y cambio de idioma dentro de `/demo`, que es donde crece la landing nueva hasta el cambio final (RM-013).
-- **Hecho cuando:** `/demo` tiene el header nuevo con anclas a experiencia, proyectos y stack, y la landing real sigue intacta.
-- **Prerequisito:** RM-007 aprobada.
-- **Fecha:** 2026-11-13 · **Estado:** Abierto
-
 ## [RM-009] Proyectos con foto
 - **Objetivo:** cada proyecto como pieza grande con imagen (de banco ahora, capturas propias después) y revelado al hacer scroll.
 - **Hecho cuando:** la sección Proyectos en `/demo` usa imágenes desde un campo `image` de los messages (es/en/tipos).

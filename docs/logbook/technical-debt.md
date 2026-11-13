@@ -26,3 +26,10 @@ changelog y se borra de aquí.
 - **Problema:** el servidor siempre renderiza en inglés con `lang="en"`; el cambio a español ocurre en el cliente y el atributo `lang` nunca se actualiza.
 - **Impacto futuro:** un visitante en español ve primero el texto en inglés, y buscadores y lectores de pantalla reciben el idioma equivocado.
 - **Fecha:** 2026-11-13 · **Estado:** Abierto
+
+## [TD-007] El contenedor de desarrollo no recarga los cambios en Windows
+- **Ubicación:** `compose.yaml:5`
+- **Riesgo:** 3/10
+- **Problema:** `next dev` (Turbopack) dentro del contenedor no detecta los cambios de archivos del bind mount de Windows; `WATCHPACK_POLLING` no tiene efecto y el HMR por WebSocket falla.
+- **Impacto futuro:** tras cada cambio hay que correr `docker compose restart web` para verlo; es fácil revisar una versión vieja sin darse cuenta.
+- **Fecha:** 2026-11-13 · **Estado:** Abierto

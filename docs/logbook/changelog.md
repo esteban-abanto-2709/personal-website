@@ -12,6 +12,12 @@ Resumen en ≤2 líneas de lo que se hizo.
 
 ---
 
+## [RM-008] Header de la landing nueva en `/demo` (2026-11-13 18:22)
+Header fijo en `/demo` con navegación por secciones vía Lenis y cambio de idioma ES/EN; la landing real sigue intacta.
+
+## [RM-007] Demo aislada del hero (2026-11-13 18:22)
+Hero cinematográfico en `/demo`: foto a pantalla completa con grano, Instrument Serif gigante y scroll fijado con GSAP + Lenis. Estilo aprobado.
+
 ## [RM-006] Sitio y PDFs sincronizados con el CV de noviembre 2026 (2026-11-13 16:52)
 PDFs de `public/` reemplazados por `cv/dist` y contenido ES/EN alineado al CV: IRTP cerrado en setiembre 2026 con cargo y logros reales, Treno, stack con AWS e IA aplicada, fecha de Netdreams corregida. Páginas `tv-peru/*` reescritas sin las afirmaciones falsas (Supabase/Vercel, rollback, load-first, editor). Build verde.
 
