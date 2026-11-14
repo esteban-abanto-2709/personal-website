@@ -15,12 +15,6 @@ con blur, grano y degradé, tipografía enorme y scroll animado con GSAP + Lenis
 Audiencia: reclutadores y tech leads. La TV es un capítulo destacado, no la
 identidad del sitio.
 
-## [RM-010] Experiencia con capítulo TV
-- **Objetivo:** línea de tiempo compacta con IRTP como escena destacada (foto de sala de control, 5 años en vivo sin fallos).
-- **Hecho cuando:** la sección Experiencia en `/demo` usa el diseño nuevo y el resto de empleos no queda opacado por la TV.
-- **Prerequisito:** RM-008.
-- **Fecha:** 2026-11-13 · **Estado:** Abierto
-
 ## [RM-011] Stack, Contacto y Footer
 - **Objetivo:** stack como tipografía en movimiento en vez de tarjetas; cierre con foto y llamada a la acción gigante.
 - **Hecho cuando:** las tres secciones existen en `/demo` con el diseño nuevo, sin `glass-card` ni `badge-tech`.

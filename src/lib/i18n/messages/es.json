@@ -29,6 +29,11 @@
           "AWS",
           "Docker",
           "C#"
+        ],
+        "highlights": [
+          { "value": "5", "label": "Años al aire en vivo" },
+          { "value": "0", "label": "Fallos al aire" },
+          { "value": "20+", "label": "Juegos interactivos" }
         ]
       },
       {

@@ -1,11 +1,17 @@
 export type Locale = 'en' | 'es';
 
+export interface Highlight {
+  value: string;
+  label: string;
+}
+
 export interface Job {
   title: string;
   company: string;
   years: string;
   description: string;
   stack: string[];
+  highlights?: Highlight[];
 }
 
 export interface Project {

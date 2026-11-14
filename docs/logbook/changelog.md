@@ -12,6 +12,9 @@ Resumen en ≤2 líneas de lo que se hizo.
 
 ---
 
+## [RM-010] Experiencia con capítulo TV (2026-11-13 20:08)
+Sección Experiencia de `/demo`: banda a pantalla completa para IRTP / TV Perú con foto y cifras (`highlights` en los messages) y línea de tiempo compacta para los demás empleos.
+
 ## [RM-009] Proyectos con foto (2026-11-13 18:37)
 Sección Proyectos de `/demo` con cinco piezas apiladas (foto con parallax y revelado, título serif gigante). Campo `image` en los messages y orden nuevo con Treno primero, que también aplica a la landing actual.
 
