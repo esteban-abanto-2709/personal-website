@@ -8,6 +8,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useGSAP } from "@gsap/react";
 import { ArrowUpRight } from "lucide-react";
 import { useMessages, useTranslations } from "@/hooks";
+import { HOME } from "./home";
 
 gsap.registerPlugin(ScrollTrigger, useGSAP);
 
@@ -136,7 +137,7 @@ export default function ProjectsShowcase() {
               </p>
               <div>
                 {internal ? (
-                  <Link href={project.link} className={linkClass}>
+                  <Link href={`${HOME}${project.link}`} className={linkClass}>
                     {content}
                   </Link>
                 ) : (

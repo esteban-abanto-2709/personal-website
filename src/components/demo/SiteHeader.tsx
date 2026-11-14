@@ -1,9 +1,12 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { usePathname, useRouter } from "next/navigation";
 import { useLenis } from "lenis/react";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useScrollSpy, useTranslations } from "@/hooks";
 import { useLocale } from "@/lib/i18n/components/LocaleProvider";
+import { HOME } from "./home";
 
 const links = ["experience", "projects", "stack"] as const;
 const locales = ["es", "en"] as const;
@@ -13,7 +16,27 @@ export default function SiteHeader() {
   const { locale, setLocale } = useLocale();
   const lenis = useLenis();
   const active = useScrollSpy();
+  const router = useRouter();
+  const pathname = usePathname();
   const [scrolled, setScrolled] = useState(false);
+
+  const goTo = (id: string) => {
+    if (document.getElementById(id)) lenis?.scrollTo(`#${id}`);
+    else router.push(`${HOME}#${id}`);
+  };
+
+  useEffect(() => {
+    if (!lenis) return;
+    const timer = window.setTimeout(() => {
+      const hash = window.location.hash;
+      ScrollTrigger.refresh();
+      lenis.resize();
+      const el = hash ? document.querySelector(hash) : null;
+      const top = el ? el.getBoundingClientRect().top + window.scrollY : 0;
+      lenis.scrollTo(top, { immediate: true, force: true });
+    }, 50);
+    return () => window.clearTimeout(timer);
+  }, [pathname, lenis]);
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 40);
@@ -30,7 +53,7 @@ export default function SiteHeader() {
     >
       <button
         type="button"
-        onClick={() => lenis?.scrollTo(0)}
+        onClick={() => (pathname === HOME ? lenis?.scrollTo(0) : router.push(HOME))}
         className="cursor-pointer font-label text-xs uppercase tracking-[0.25em]"
       >
         Esteban Abanto
@@ -42,7 +65,7 @@ export default function SiteHeader() {
             <button
               key={id}
               type="button"
-              onClick={() => lenis?.scrollTo(`#${id}`)}
+              onClick={() => goTo(id)}
               className={`cursor-pointer font-label text-xs uppercase tracking-[0.25em] transition-colors ${
                 active === id ? "text-ember" : "text-bone/70 hover:text-bone"
               }`}
