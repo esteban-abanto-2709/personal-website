@@ -12,6 +12,9 @@ Resumen en ≤2 líneas de lo que se hizo.
 
 ---
 
+## [RM-011] Stack, Contacto y Footer (2026-11-13 20:27)
+Stack de `/demo` con dos cintas en movimiento ligadas al scroll e índice por categorías; cierre a pantalla completa con foto y email gigante que se copia, y footer sobrio. Claves `copyEmail`, `emailCopied` y `write` en `contact`.
+
 ## [RM-010] Experiencia con capítulo TV (2026-11-13 20:08)
 Sección Experiencia de `/demo`: banda a pantalla completa para IRTP / TV Perú con foto y cifras (`highlights` en los messages) y línea de tiempo compacta para los demás empleos.
 

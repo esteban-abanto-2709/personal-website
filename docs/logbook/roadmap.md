@@ -15,12 +15,6 @@ con blur, grano y degradé, tipografía enorme y scroll animado con GSAP + Lenis
 Audiencia: reclutadores y tech leads. La TV es un capítulo destacado, no la
 identidad del sitio.
 
-## [RM-011] Stack, Contacto y Footer
-- **Objetivo:** stack como tipografía en movimiento en vez de tarjetas; cierre con foto y llamada a la acción gigante.
-- **Hecho cuando:** las tres secciones existen en `/demo` con el diseño nuevo, sin `glass-card` ni `badge-tech`.
-- **Prerequisito:** RM-008.
-- **Fecha:** 2026-11-13 · **Estado:** En progreso (2026-11-13)
-
 ## [RM-012] Casos de estudio TV Perú
 - **Objetivo:** que las páginas `/tv-peru/*` adopten el mismo lenguaje visual.
 - **Hecho cuando:** `TvPeruCaseStudy` usa el sistema nuevo en ambas páginas.

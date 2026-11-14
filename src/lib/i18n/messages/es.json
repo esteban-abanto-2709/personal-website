@@ -255,7 +255,10 @@
   },
   "contact": {
     "title": "¿Listo para colaborar?",
-    "description": "Siempre estoy abierto a discutir nuevos proyectos y oportunidades."
+    "description": "Siempre estoy abierto a discutir nuevos proyectos y oportunidades.",
+    "copyEmail": "Copiar email",
+    "emailCopied": "Copiado",
+    "write": "Escribir"
   },
   "footer": {
     "madeWith": "Hecho con dedicación."

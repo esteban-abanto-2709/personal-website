@@ -33,3 +33,10 @@ changelog y se borra de aquí.
 - **Problema:** `next dev` (Turbopack) dentro del contenedor no detecta los cambios de archivos del bind mount de Windows; `WATCHPACK_POLLING` no tiene efecto y el HMR por WebSocket falla.
 - **Impacto futuro:** tras cada cambio hay que correr `docker compose restart web` para verlo; es fácil revisar una versión vieja sin darse cuenta.
 - **Fecha:** 2026-11-13 · **Estado:** Abierto
+
+## [TD-008] Claves de `contact` declaradas en el tipo pero ausentes en los JSON
+- **Ubicación:** `src/lib/i18n/types/index.ts:92`
+- **Riesgo:** 2/10
+- **Problema:** el tipo `contact` declara `description2`, `description3`, `sendProposal`, `letsTalk` y `connect`, que no existen en `es.json` ni en `en.json` y nadie usa.
+- **Impacto futuro:** el tipo deja de describir los datos reales; un componente podría usar una de esas claves sin error de compilación y mostrar la clave en crudo.
+- **Fecha:** 2026-11-13 · **Estado:** Abierto

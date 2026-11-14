@@ -93,6 +93,7 @@ export interface Messages {
     description3: string;
     copyEmail: string;
     emailCopied: string;
+    write: string;
     sendProposal: string;
     letsTalk: string;
     connect: string;

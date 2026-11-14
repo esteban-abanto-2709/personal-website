@@ -255,7 +255,10 @@
   },
   "contact": {
     "title": "Ready to collaborate?",
-    "description": "I'm always open to discussing new projects and opportunities."
+    "description": "I'm always open to discussing new projects and opportunities.",
+    "copyEmail": "Copy email",
+    "emailCopied": "Copied",
+    "write": "Write"
   },
   "footer": {
     "madeWith": "Made with dedication."
