@@ -19,7 +19,7 @@ identidad del sitio.
 - **Objetivo:** stack como tipografía en movimiento en vez de tarjetas; cierre con foto y llamada a la acción gigante.
 - **Hecho cuando:** las tres secciones existen en `/demo` con el diseño nuevo, sin `glass-card` ni `badge-tech`.
 - **Prerequisito:** RM-008.
-- **Fecha:** 2026-11-13 · **Estado:** Abierto
+- **Fecha:** 2026-11-13 · **Estado:** En progreso (2026-11-13)
 
 ## [RM-012] Casos de estudio TV Perú
 - **Objetivo:** que las páginas `/tv-peru/*` adopten el mismo lenguaje visual.
