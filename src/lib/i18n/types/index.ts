@@ -14,6 +14,7 @@ export interface Project {
   techStack: string[];
   link: string;
   year: string;
+  image: string;
 }
 
 export interface TvPeruPage {

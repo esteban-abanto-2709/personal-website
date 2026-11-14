@@ -12,6 +12,9 @@ Resumen en ≤2 líneas de lo que se hizo.
 
 ---
 
+## [RM-009] Proyectos con foto (2026-11-13 18:37)
+Sección Proyectos de `/demo` con cinco piezas apiladas (foto con parallax y revelado, título serif gigante). Campo `image` en los messages y orden nuevo con Treno primero, que también aplica a la landing actual.
+
 ## [RM-008] Header de la landing nueva en `/demo` (2026-11-13 18:22)
 Header fijo en `/demo` con navegación por secciones vía Lenis y cambio de idioma ES/EN; la landing real sigue intacta.
 

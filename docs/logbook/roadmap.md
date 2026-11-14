@@ -15,12 +15,6 @@ con blur, grano y degradé, tipografía enorme y scroll animado con GSAP + Lenis
 Audiencia: reclutadores y tech leads. La TV es un capítulo destacado, no la
 identidad del sitio.
 
-## [RM-009] Proyectos con foto
-- **Objetivo:** cada proyecto como pieza grande con imagen (de banco ahora, capturas propias después) y revelado al hacer scroll.
-- **Hecho cuando:** la sección Proyectos en `/demo` usa imágenes desde un campo `image` de los messages (es/en/tipos).
-- **Prerequisito:** RM-008.
-- **Fecha:** 2026-11-13 · **Estado:** Abierto
-
 ## [RM-010] Experiencia con capítulo TV
 - **Objetivo:** línea de tiempo compacta con IRTP como escena destacada (foto de sala de control, 5 años en vivo sin fallos).
 - **Hecho cuando:** la sección Experiencia en `/demo` usa el diseño nuevo y el resto de empleos no queda opacado por la TV.

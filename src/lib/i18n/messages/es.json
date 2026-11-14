@@ -81,30 +81,6 @@
     "viewProject": "Ver proyecto",
     "items": [
       {
-        "title": "Que Gane el Mejor",
-        "description": "Juegos interactivos en vivo de un concurso escolar transmitido a nivel nacional por TV Perú, con 28 colegios y más de 600 participantes. Los pasé de Unity a web.",
-        "techStack": [
-          "Next.js",
-          "TypeScript",
-          "AWS",
-          "Docker",
-          "Real-time"
-        ],
-        "link": "/tv-peru/que-gane-el-mejor",
-        "year": "2023 - 2026"
-      },
-      {
-        "title": "Pukllaspa Yachay",
-        "description": "Programa concurso en quechua para la promoción del idioma. Más de 20 juegos interactivos en Unity, operados en vivo a diario.",
-        "techStack": [
-          "Unity",
-          "C#",
-          "Real-time"
-        ],
-        "link": "/tv-peru/pukllaspa-yachay",
-        "year": "2021 - 2023"
-      },
-      {
         "title": "Treno",
         "description": "App de entrenamiento en producción con usuarios reales desde octubre de 2026 (treno.rocks), desplegada en AWS con CI/CD y pruebas automatizadas.",
         "techStack": [
@@ -116,7 +92,22 @@
           "AWS"
         ],
         "link": "https://github.com/esteban-abanto-2709/gym-tracker",
-        "year": "2026"
+        "year": "2026",
+        "image": "/images/projects/treno.jpg"
+      },
+      {
+        "title": "Que Gane el Mejor",
+        "description": "Juegos interactivos en vivo de un concurso escolar transmitido a nivel nacional por TV Perú, con 28 colegios y más de 600 participantes. Los pasé de Unity a web.",
+        "techStack": [
+          "Next.js",
+          "TypeScript",
+          "AWS",
+          "Docker",
+          "Real-time"
+        ],
+        "link": "/tv-peru/que-gane-el-mejor",
+        "year": "2023 - 2026",
+        "image": "/images/projects/que-gane-el-mejor.jpg"
       },
       {
         "title": "Rally",
@@ -129,7 +120,20 @@
           "Docker"
         ],
         "link": "https://github.com/esteban-abanto-2709/rally-app",
-        "year": "2026"
+        "year": "2026",
+        "image": "/images/projects/rally.jpg"
+      },
+      {
+        "title": "Pukllaspa Yachay",
+        "description": "Programa concurso en quechua para la promoción del idioma. Más de 20 juegos interactivos en Unity, operados en vivo a diario.",
+        "techStack": [
+          "Unity",
+          "C#",
+          "Real-time"
+        ],
+        "link": "/tv-peru/pukllaspa-yachay",
+        "year": "2021 - 2023",
+        "image": "/images/projects/pukllaspa-yachay.jpg"
       },
       {
         "title": "Ephemeral Chat",
@@ -141,7 +145,8 @@
           "Express"
         ],
         "link": "https://ephemeral-chat-9f8t.onrender.com",
-        "year": "2025"
+        "year": "2025",
+        "image": "/images/projects/ephemeral-chat.jpg"
       }
     ]
   },
